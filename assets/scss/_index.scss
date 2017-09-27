@@ -5,7 +5,7 @@ body{
     background-color:#eee;
     color:#000;
 }
-section #mobileview{
+#mobileview{
     & .overlay{
         display: none;
         position: fixed;
@@ -64,7 +64,7 @@ section #mobileview{
         }
     }
 }
-section .navbar{
+.navbar{
     background-color: transparent;
     height: 80px;
     border:none;
@@ -104,7 +104,7 @@ section .navbar{
         }
     }
 }
-section .scroll-change{
+.scroll-change{
     background-color: #374354 !important;
     color:#000;
     margin-top: 0 !important;
@@ -140,7 +140,7 @@ section .scroll-change{
         }
     }
 }
-section #bannerimage{
+#bannerimage{
     position: absolute;
     margin-bottom: 0 !important;
     height: 100vh;
@@ -302,6 +302,10 @@ section #welcome{
             border-radius: 30px;
             padding:3px 20px;
         }
+        & a:hover{
+            background-color: #fcc621;
+            transition: all .3s ease-in-out,.5s ease-in-out;
+        }
     }
 }
 #serve{
@@ -362,17 +366,21 @@ section #welcome{
     }
 }
 #view{
-    background-image: url("../images/alikaraw.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 90vh;
     width: 100%;
     position: relative;
     & .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 90vh;
         background-color: #000;
         opacity: .6;
+    }
+    & img{
+        width: 100%;
+        height: 100%;
     }
     & #box1{
         margin: 0 auto;
@@ -416,15 +424,15 @@ section #welcome{
     top:0;
     left: 0;
     background-color: #000;
-    opacity: .5;
+    opacity: 0;
     width: 100%;
     height: 100%;
 
-    transition: all .5s ease-in-out,all .5s ease-in-out;
+    transition: all .3s ease-in-out,all .5s ease-in-out;
 }
 @mixin info(){
     position: absolute;
-    top: 0;
+    top: -90%;
     left: 0;
     height: 100%;
     width: 100%;
@@ -434,9 +442,23 @@ section #welcome{
     padding: 0 20px;
     text-align: center;
     color:#fff;
-    & a{
+    overflow: hidden;
+    & button{
         display: block;
         color:inherit;
+        border:none;
+        font-size: 1.2em;
+        background-color: #19b197;
+        font-family: Arial Rounded MT;
+        font-weight: bold;
+        border-radius: 30px;
+        padding:3px 20px;
+        width: 30%;
+        margin: 0 auto;
+    }
+    & button:hover{
+        background-color: #fcc621;
+        transition: all .3s ease-in-out,.5s ease-in-out;
     }
 }
 #tourist{
@@ -451,29 +473,63 @@ section #welcome{
             display: flex;
             flex-grow: 1;
             flex-direction: column;
-            & .overlay{ @include overlay()}
             & .imagecontent{
                 flex-grow: 1;
                 width: 100%;
                 height: 50%;
                 position: relative;
-                & img{
+                overflow: hidden;
+                & .imagehover{
                     width: 100%;
                     height: 100%;
+                    position: relative;
+                    & .overlay{ @include overlay()}
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    & .info{ @include info()}
+                
                 }
-                & .info{ @include info()}
+                & .imagehover:hover{
+                    & .overlay{
+                        opacity: .6;
+                        transition: opacity .3s ease-in-out, opacity .5s ease-in-out;
+                    }
+                    & .info{
+                        top:0;
+
+                        transition: top .3s ease-in-out, top .5s ease-in-out;
+                    }
+                }
             }
         }
         & #center-image{
             flex-grow: 2;
             width: 40%;
             position: relative;
-            & .overlay{ @include overlay()}
-            & img{
+            overflow: hidden;
+            & .imagehover{
                 width: 100%;
                 height: 100%;
+                & .overlay{ @include overlay()}
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+                & .info{ @include info()}
             }
-            & .info{ @include info()}
+            & .imagehover:hover{
+                & .overlay{
+                    opacity: .6;
+                    transition: opacity .3s ease-in-out, opacity .5s ease-in-out;
+                }
+                & .info{
+                    top:0;
+
+                    transition: top .3s ease-in-out, top .5s ease-in-out;
+                }
+            }
         }
         & #image-right{
             display: flex;
@@ -481,16 +537,31 @@ section #welcome{
             flex-direction: column;
             flex-grow: 1;
             & .imagecontent{
+                overflow: hidden;
                 width: 100%;
                 height: 50%;
                 flex-grow: 1;
                 position: relative;
-                & .overlay{ @include overlay()}
-                & img{
+                & .imagehover{
                     width: 100%;
-                    height: 100%;
+                    & .overlay{ @include overlay()}
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    & .info{ @include info()}
                 }
-                & .info{ @include info()}
+                & .imagehover:hover{
+                    & .overlay{
+                        opacity: .6;
+                        transition: opacity .3s ease-in-out, opacity .5s ease-in-out;
+                    }
+                    & .info{
+                        top:0;
+
+                        transition: top .3s ease-in-out, top .5s ease-in-out;
+                    }
+                }
             }
         }
     }
@@ -503,15 +574,28 @@ section #welcome{
             width: 33.33%;
             height: 100%;
             position: relative;
-            & img{
-                width: 100%;
+            overflow: hidden;
+            & .imagehover{
                 height: 100%;
+                width: 100%;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+                & .overlay{ @include overlay()}
+                & .info{ @include info()}
             }
-            & .overlay{ @include overlay()}
-            & .info{ @include info()}
-        }
-        & .image-content:hover{
-            
+            & .imagehover:hover{
+                & .overlay{
+                    opacity: .6;
+                    transition: opacity .3s ease-in-out, opacity .5s ease-in-out;
+                }
+                & .info{
+                    top:0;
+                    transition: top .3s ease-in-out, top .5s ease-in-out;
+
+                }
+            }
         }
     }
 }
