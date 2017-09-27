@@ -5,7 +5,7 @@ body{
     background-color:#eee;
     color:#000;
 }
-#mobileview{
+section #mobileview{
     & .overlay{
         display: none;
         position: fixed;
@@ -64,11 +64,13 @@ body{
         }
     }
 }
-.navbar{
+section .navbar{
     background-color: transparent;
     height: 80px;
     border:none;
     margin-top: 2%;
+
+    transition: all .3s ease-in-out,all .3s ease-in-out;
     & .container{
         & .navbar-header{
             & button{
@@ -102,7 +104,7 @@ body{
         }
     }
 }
-.scroll-change{
+section .scroll-change{
     background-color: #374354 !important;
     color:#000;
     margin-top: 0 !important;
@@ -138,7 +140,7 @@ body{
         }
     }
 }
-#bannerimage{
+section #bannerimage{
     position: absolute;
     margin-bottom: 0 !important;
     height: 100vh;
@@ -167,7 +169,7 @@ body{
         background-repeat: no-repeat;
     }
 }
-#welcome{
+section #welcome{
     position: relative;
     height: 100vh;
     width: 100%;

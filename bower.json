@@ -43,7 +43,8 @@
       "main": [
         "slick/*.css",
         "slick/fonts/*",
-        "slick/*.min.js"
+        "slick/*.min.js",
+        "slick/*"
       ]
     }
   }
