@@ -16,13 +16,13 @@ var concat = require('gulp-concat');
 
 
 gulp.task('clean-js',function(){
-    return gulp.src('./public/assets/js/*.min.js')
-    .pipe(clean());
+    return gulp.src('./public/assets/js/*.min.js',{read: false})
+    .pipe(clean({force: true}));
 });
 
 gulp.task('clean-css',function(){
-    return gulp.src('./public/assets/css/*.min.css')
-    .pipe(clean());
+    return gulp.src('./public/assets/css/*.min.css',{read: false})
+    .pipe(clean({force: true}));
 });
 
 gulp.task('styles',['clean-css'],function(){
@@ -135,17 +135,17 @@ gulp.task('angular-template',['clean-angular-template'],function(){
 });
 
 gulp.task('clean-angular-template',function(){
-    return gulp.src('./public/assets/app/template/**/*')
+    return gulp.src('./public/assets/app/template/**/*',{read: false})
     .pipe(clean());
 });
 
 gulp.task('clean-angular-js',function(){
-    return gulp.src('./public/assets/app/*.min.js')
+    return gulp.src('./public/assets/app/*.min.js',{read: false})
     .pipe(clean());
 });
 
 gulp.task('clean-angular-controller',function(){
-    return gulp.src('./public/assets/app/controller/**/*.js')
+    return gulp.src('./public/assets/app/controller/**/*.js',{read: false})
     .pipe(clean());
 });
 
