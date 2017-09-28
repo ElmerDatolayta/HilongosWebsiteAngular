@@ -59,10 +59,10 @@ gulp.task('html',function(){
     }))
     .pipe(inject(gulp.src(
         [
-            './public/assets/js/*.js',
             './public/assets/css/*.css',
             './public/assets/app/*.js',
-            './public/assets/app/controller/**/*.js'
+            './public/assets/app/controller/**/*.js',
+            './public/assets/js/*.js',
         ]
         , {read: false}),{ignorePath:'public'}))
     .pipe(gulp.dest('./public/'));
@@ -74,7 +74,7 @@ gulp.task('icon',function(){
 });
 
 gulp.task('image',function(){
-    return gulp.src('assets/images/*')
+    return gulp.src('assets/images/**/*')
     .pipe(gulp.dest('./public/assets/images'));
 });
 

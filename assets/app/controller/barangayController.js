@@ -3,15 +3,11 @@
 app.controller('barangayController',[
     '$scope',
     'sharedDateService',
-    '$rootScope',
     function(
         $scope,
-        sharedDateService,
-        $rootScope
+        sharedDateService
     )
     {
-        $rootScope.$broadcast('state', {
-            isHome: false
-        });
+        
     }
 ]);

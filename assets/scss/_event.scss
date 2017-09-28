@@ -1,10 +1,52 @@
-#eventPage
-{
-    #eventHeader
-    {
+#eventPage{
+    position: relative;
+    top: -60px;
+    #eventHeader{
         background-color: #EDEADB;
         padding: 30px;
-        border-top: 15px solid #61B873;        
+        border-top: 23px solid #61B873;
+        #imgEventHeader{
+            height: auto;
+            width: 120px;
+            position: absolute;
+            right: 0;
+            top: -34px;
+        }    
+        #iconEvenCalendar{
+            width: 35px;
+            position: absolute;
+        }    
+        #eventTitle{
+            margin-left: 40px;
+        }
     }
-    
+    .event-border{
+        border: 2px solid #EDEADB;
+    }
+    .input-form{
+        position: relative;
+        &.icon-right{
+            i{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+            }
+            input{
+                padding-right: 30px;
+            }
+        }
+    } 
+
+    .event-image{
+        background-image: url('../images/banner.jpg');
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+    }
+    .event-calendar{
+        background-color: #61B873;
+        width: 100%;
+        height: auto;
+    }
 }
