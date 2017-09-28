@@ -10,10 +10,8 @@ app.controller('homeController',[
         $rootScope
     )
     {
-        $rootScope.$broadcast('state', {
-            isHome: true
-        });
-$(".navbar .container .navbar-header button").click(function(){
+<<<<<<< Updated upstream
+        $(".navbar .container .navbar-header button").click(function(){
             $(".navbar .container .navbar-header button").addClass("click");
             $("#mobileview #navmenu").addClass("showmobile");
         
@@ -79,6 +77,10 @@ $(".navbar .container .navbar-header button").click(function(){
                     scrollTop: num
                 }, 600);
             });
+=======
+        $rootScope.$broadcast('state', {
+            isHome: true
+>>>>>>> Stashed changes
         });
     }
 ]);

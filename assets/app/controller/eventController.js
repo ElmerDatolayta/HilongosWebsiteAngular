@@ -1,6 +1,6 @@
 'use strict';
 
-app.controller('barangayController',[
+app.controller('eventController',[
     '$scope',
     'sharedDateService',
     '$rootScope',
@@ -11,7 +11,7 @@ app.controller('barangayController',[
     )
     {
         $rootScope.$broadcast('state', {
-            isHome: false
+            isHome: false // send whatever you want
         });
     }
 ]);

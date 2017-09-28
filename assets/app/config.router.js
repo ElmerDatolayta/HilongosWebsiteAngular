@@ -25,6 +25,11 @@ app.config([
             url: '/barangay',
             controller : 'barangayController',
             templateUrl: 'assets/app/template/barangay/barangay.html'
+		})
+		.state('event', {
+            url: '/event',
+            controller : 'eventController',
+            templateUrl: 'assets/app/template/event/event.html'
         });
 
 	    $qProvider.errorOnUnhandledRejections(false);

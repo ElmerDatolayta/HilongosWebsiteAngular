@@ -68,6 +68,11 @@ gulp.task('html',function(){
     .pipe(gulp.dest('./public/'));
 });
 
+gulp.task('icon',function(){
+    return gulp.src('assets/images/icons/favicon.ico')
+    .pipe(gulp.dest('./public/'));
+});
+
 gulp.task('image',function(){
     return gulp.src('assets/images/*')
     .pipe(gulp.dest('./public/assets/images'));
@@ -123,7 +128,6 @@ gulp.task('angular-controller',['clean-angular-controller'],function(){
             './assets/app/controller/**/*.js'
         ]
     )
-    .pipe(plumber())
     .pipe(gulp.dest('./public/assets/app/controller'));
 });
 
@@ -150,4 +154,4 @@ gulp.task('clean-angular-controller',function(){
 });
 
 
-gulp.task('default',['bower-files','styles','js','angular-js','angular-controller','angular-template','html','image','font','watch']);
+gulp.task('default',['bower-files','styles','js','angular-js','angular-controller','angular-template','html','image','font','icon','watch']);
