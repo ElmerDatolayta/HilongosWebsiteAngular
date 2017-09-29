@@ -139,7 +139,7 @@ gulp.task('angular-template',['clean-angular-template'],function(){
 });
 
 gulp.task('clean-angular-template',function(){
-    return gulp.src('./public/assets/app/template/**/*',{read: false})
+    return gulp.src('./public/assets/app/template',{read: true})
     .pipe(clean());
 });
 
