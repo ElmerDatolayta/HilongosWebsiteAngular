@@ -35,6 +35,11 @@ app.config([
             url: '/about',
             controller : 'aboutController',
             templateUrl: 'assets/app/template/about/about.html'
+		})
+		.state('investor', {
+            url: '/investor',
+            controller : 'investorController',
+            templateUrl: 'assets/app/template/investor/investor.html'
         });
 
 	    $qProvider.errorOnUnhandledRejections(false);
