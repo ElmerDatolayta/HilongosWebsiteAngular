@@ -30,6 +30,11 @@ app.config([
             url: '/event',
             controller : 'eventController',
             templateUrl: 'assets/app/template/event/event.html'
+		})
+		.state('about', {
+            url: '/about',
+            controller : 'aboutController',
+            templateUrl: 'assets/app/template/about/about.html'
         });
 
 	    $qProvider.errorOnUnhandledRejections(false);
