@@ -22,7 +22,7 @@ app.config([
             templateUrl: 'assets/app/template/home.html'
 		})
 		.state('barangay', {
-            url: '/barangay',
+            url: '/barangay/:barangayId',
             controller : 'barangayController',
             templateUrl: 'assets/app/template/barangay/barangay.html'
 		})
