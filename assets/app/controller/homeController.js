@@ -4,12 +4,10 @@ app.controller('homeController',[
     '$scope',
     function($scope)
     {
-        
         $("section #about #bannerimage").slick({
             arrows: false,
             dots: true
         });
-        
         $(document).ready(function(){
             $("#tourist #spot #image-left .imagecontent .imagehover .info button").on("click",function(){
                 var x = $(this).attr("data-image");
