@@ -5,17 +5,21 @@ app.controller('barangayController',[
     'sharedDateService',
     '$stateParams',
     '$state',
+    'barangayDataService',
     function(
         $scope,
         sharedDateService,
         $stateParams,
-        $state
+        $state,
+        barangayDataService
     )
     {
 
         $scope.barangay = {};
 
         $scope.barangay.barangayId = $stateParams.barangayId || 'main';
+
+        getBarangayData();
 
         var imageUrl = 'assets/images/map_search/';
         var imageExtension = '.jpg';
@@ -67,9 +71,12 @@ app.controller('barangayController',[
               }
           });
 
-        $scope.barangay.searchList = 
+        function getBarangayData(){
+            $scope.barangay.searchList = barangayDataService.getBarangaySearchString();
+            $scope.barangay.nameList = barangayDataService.getBarangayNames();
+        };
 
-        $scope.barangay.nameList = 
+    
         
         
     }

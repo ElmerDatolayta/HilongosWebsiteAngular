@@ -126,5 +126,5 @@ app.factory('barangayDataService',function(){
     factory.getBarangayNames = barangayNames;
     factory.getBarangaySearchString = barangaySearchStrings;
 
-    return this;
+    return factory;
 });
