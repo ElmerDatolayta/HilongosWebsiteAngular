@@ -73,6 +73,7 @@ body{
     transition: all .3s ease-in-out,all .3s ease-in-out;
     & .container{
         width: 90vw;
+        height: 100%;
         & .navbar-header{
             & button{
                 margin-top: 28px;
@@ -92,9 +93,13 @@ body{
             } 
         }
         & .collapse{
+            height: 100% !important;
             & .nav{
-                margin-top: 4vh;
+                height: 100%;
                 & .nav-item{
+                    height: 100%;
+                    display: flex;
+                   align-items: center;
                     margin-right: 2vh;
                     & .nav-link{
                         font-size: 3vh;
@@ -709,48 +714,11 @@ footer{
                     font-size: 3vh;
                 }
                 & .social{
+                    width: 100%;
                     & a {
-                        & .fa-twitter:hover { 
-                            background-color: #46c0fb; 
-                        } 
-                        .circle{
-                            border-radius: 50%;
-                            margin: 0.15em;
-                            font-size: 3em;
-                            }
-                            
-                        .fa-twitter{
-                            background: #4099FF;
-                            color: #FFFFFF;
-                          padding: 0.05em 0.07em;
-                            }
-                        
-                        .fa-google-plus{
-                          color: #FFFFFF;
-                          background: #dd4b39;
-                          padding: 0.1em 0.1em;
-                          }  
-                        
-                        .fa-dribbble{
-                            color: #ea4c89;
-                            }
-                        
-                        .fa-pinterest{
-                            color: #cb2027;
-                            }
-                        
-                        .fa-facebook{
-                            background: #3B5998;
-                            color: #FFFFFF;
-                          padding: 0.05em 0.3em;
-                            }
-                        
-                        .fa-youtube{
-                            background: #bb0000;
-                            color: #FFFFFF;
-                          padding: 0.25em 0.25em;
-                          
-                        }
+                        height: 10vh;
+                        width: 10vh;
+                        background-color: #fff;
                     }
                     
                 }
