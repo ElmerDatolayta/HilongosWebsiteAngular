@@ -15,7 +15,8 @@ app.controller('homeController',[
                 var url = $(this).attr("href");
                 $("#view #box2 a").attr("href",url);
                 var des = $(this).find("p").html()
-                $("#view img").attr("src",x);
+                $("#view").attr("style","background-image:url('"+x+"')");
+                //$("#view img").attr("src",x);
                 $("#view #box2 h3").html(des);
                 var num = $("#view").offset().top - 50 
                 $('html,body').animate({
@@ -27,7 +28,8 @@ app.controller('homeController',[
                 var url = $(this).attr("href");
                 $("#view #box2 a").attr("href",url);
                 var des = $(this).find("p").html()
-                $("#view img").attr("src",x);
+                $("#view").attr("style","background-image:url('"+x+"')");
+                //$("#view img").attr("src",x);
                 $("#view #box2 h3").html(des);
                 var num = $("#view").offset().top - 50 
                 $('html,body').animate({
@@ -39,7 +41,8 @@ app.controller('homeController',[
                 var url = $(this).attr("href");
                 $("#view #box2 a").attr("href",url);
                 var des = $(this).find("p").html()
-                $("#view img").attr("src",x);
+                $("#view").attr("style","background-image:url('"+x+"')");
+                //$("#view img").attr("src",x);
                 $("#view #box2 h3").html(des);
                 var num = $("#view").offset().top - 50 
                 $('html,body').animate({
@@ -51,7 +54,7 @@ app.controller('homeController',[
                 var url = $(this).attr("href");
                 $("#view #box2 a").attr("href",url);
                 var des = $(this).find("p").html()
-                $("#view img").attr("src",x);
+                $("#view").attr("style","background-image:url('"+x+"')");
                 $("#view #box2 h3").html(des);
                 var num = $("#view").offset().top - 50 
                 $('html,body').animate({

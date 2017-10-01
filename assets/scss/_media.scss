@@ -88,7 +88,7 @@
         }
     }
 }
-@media (max-width: 1400px){
+@media (max-width: 1400px) AND (min-width:1024px){
     .navbar{
         height: 80px;
         border:none;
@@ -549,7 +549,7 @@
     }
     
 }
-@media (max-width:650px){
+@media (max-width:650px) AND (min-width: 450px){
     #tourist{
         #spot{
             width: 100%;
@@ -589,7 +589,7 @@
         }
     }
 }
-@media (max-width:1024px){
+@media (max-width:1024px) AND (min-width:768px){
     .navbar{
         & .container{
             max-width: 100%;
@@ -650,7 +650,7 @@
         }
     }
 }
-@media (max-width:768px){
+@media (max-width:768px) AND (min-width:450px){
     .navbar{
         padding: 0 5%;
         & .container{
@@ -726,35 +726,16 @@
     }
 }
 @media (max-width:450px){
-    #about{
-        & #bannerimage{
-            & .slick-dots{
-                width: 50%;
-                bottom: 0;
-            }
-        }
-        & .col-md-6{
-            & p{
-                padding:5px;
+    #about{ 
+        & .container{
+            & .col-md-6{
+                & p{
+                    padding:0;
+                }
             }
         }
     }
-    #view{
-        & #box1{
-            border:none;
-        }
-        & #box2{
-            border:none;
-            & h2{
-                padding-top: 0;
-            }
-            & p{
-                margin:0 auto;
-                width: 90%;
-            }
-        }
-
-    }
+    
     #map{
         & .col-md-4{
             & #touch{
@@ -810,6 +791,104 @@
                 & #learn{
                     margin: 0 auto;
                     margin-bottom: 2%;
+                }
+            }
+        }
+    }
+    #view{
+        height: 100%;
+        width: 100%;
+        padding:4%;
+        background-size: cover;
+        & .row{
+            & h2{
+                position: relative ;
+            }
+            & #box2{
+                border:none;
+                width: 100%;
+                left: 0;
+                position: relative;
+    
+                & #box1{
+                    border:none;
+                }
+                & h2{
+                    padding-top: 0;
+                    text-align: center;
+                    padding: 2%;
+                }
+                & p{
+                    margin-bottom:5%;
+                    width: 90%;
+                }
+            }
+        }
+    }
+    @mixin overlay1(){
+        opacity: .5;
+    }
+    @mixin info1(){
+        top: 0;
+        & p{
+            font-size: 3vh;
+        }
+    }
+    #tourist{
+        & #spot{
+            display: block;
+            width: 100%;
+            height: 100%;
+            & #image-left, & #image-right, & #center-image{
+                display: block;
+                width: 100%;
+                height: 100%;
+                & .imagecontent{
+                    display: block;
+                    height: 100%;
+                    & .imagehover{
+                        & .overlay{ @include overlay1()}
+                        & .info{@include info1()}
+                    }
+                }
+                & .imagehover{
+                    & .overlay{ @include overlay1()}
+                    & .info{@include info1()}
+                }
+            }
+        }
+        & #spot2{
+            display: block;
+            width: 100%;
+            height: 100%;
+            & .image-content{
+                width: 100%;
+                height: 100%;
+                display: block;
+                & .imagehover{
+                    & .overlay{ @include overlay1()}
+                    & .info{@include info1()}
+                }
+            }
+        }
+    }
+    footer{
+        & .container{
+            width: 90vw;
+            & .row{
+                & .col-xs-12:last-child{
+                    text-align: center;
+                }
+                & .col-xs-12:first-child{
+                    text-align: center;
+                }
+                & .col-md-3{
+                    & .social{
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;   
+                    }
                 }
             }
         }
