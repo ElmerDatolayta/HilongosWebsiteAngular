@@ -1,6 +1,55 @@
 #barangayPage{
-    .barangay-map{
-        width: 100%;
-        height: auto;
+    
+    #mapSection{
+        position: relative;
+        .search-box-container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            #_dropdown{
+                background-color: rgba(255,255,255,0.7);
+                width: 100%;
+                margin-top: 5px;
+                .angucomplete-title{
+                    font-size: 20px;
+                    .highlight{
+                        color: red;
+                        font-weight: bold;
+                    }
+                }
+
+            }     
+            .input-form{
+                position: relative;
+                &.icon-right{
+                    i{
+                        position: absolute;
+                        right: 23px;
+                        top: 16px;
+                        font-size: 2em;
+                        color: #999999;
+                        opacity: 0.7;
+                    }
+                }
+                input{
+                    padding-right: 60px;
+                }
+            }    
+        }
+        .barangay-map{
+            width: 100%;
+            height: auto;
+        }
+        .search-box{
+            padding: 30px;
+            font-size: 2em;
+            background-color: rgba(255,255,255,0.3);
+            border: 0;
+            border-bottom: 2px solid red;
+            border-radius: 0;
+            box-shadow: none;
+        }
+        
     }
 }

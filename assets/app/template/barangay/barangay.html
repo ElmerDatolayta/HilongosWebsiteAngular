@@ -1,16 +1,25 @@
 <ng-include src="'assets/app/template/partial/banner-half.html'"></ng-include>
 <div id="barangayPage">
-        <angucomplete-alt id="ex2"
-        placeholder="Search Barangay"
-        pause="300"
-        selected-object="barangay.selected"
-        local-data="barangay.nameList"
-        local-search="barangay.search"
-        title-field="name"
-        minlength="3"
-        input-class="form-control form-control-small"
-        match-class="highlight" 
-        input-changed="barangay.trackInputChange"/>
-
-        <img class="barangay-map" data-ng-src="{{barangay.imageSrc}}">
+        <section id="mapSection">
+                <div class="search-box-container">
+                        <div class="input-form icon-right">
+                                <angucomplete-alt
+                                placeholder="Search a barangay"
+                                pause="300"
+                                selected-object="barangay.selected"
+                                local-data="barangay.nameList"
+                                local-search="barangay.search"
+                                title-field="name"
+                                minlength="3"
+                                input-class="form-control form-control-small search-box"
+                                match-class="highlight" 
+                                input-changed="barangay.trackInputChange"/>
+                                <i class="fa fa-search"></i>
+                        </div>
+                </div>
+                
+        
+                <img class="barangay-map" data-ng-src="{{barangay.imageSrc}}">
+        </section>
+        
 </div>
