@@ -715,10 +715,25 @@ footer{
                 }
                 & .social{
                     width: 100%;
+                    height: 100%;
+                    display: flex;
                     & a {
-                        height: 10vh;
-                        width: 10vh;
-                        background-color: #fff;
+                        margin-right: 15px;
+                        & i{
+                           font-size: 4vh;
+                           width: 6vh;
+                           height: 6vh;
+                           border-radius: 100%;
+                           background-color: #fff;
+                           display: flex;
+                           align-items: center;
+                           justify-content: center;
+                        }
+                    }
+                    & a:last-of-type{
+                        & i{
+                            background-color: transparent;
+                        }
                     }
                     
                 }
