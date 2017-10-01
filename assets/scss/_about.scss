@@ -31,18 +31,18 @@
 
                     &.active {
                         background-color: #61b872;
-
+                        .triangle{
+                            position: absolute;
+                            content: " ";
+                            top: 40%;
+                            left: 40%;
+                            border-width: 25px;
+                            border-style: solid;
+                            border-color: transparent transparent #e5e5e5 transparent;
+                        }
                         
                     }
-                    .triangle{
-                        position: absolute;
-                        content: " ";
-                        top: 40%;
-                        // margin-left: -43%;
-                        border-width: 25px;
-                        border-style: solid;
-                        border-color: transparent transparent #e5e5e5 transparent;
-                    }
+                    
                 }
             }
         } 
