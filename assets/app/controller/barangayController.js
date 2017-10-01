@@ -24,7 +24,7 @@ app.controller('barangayController',[
         var imageUrl = 'assets/images/map_search/';
         var imageExtension = '.jpg';
         $scope.barangay.imageSrc =  imageUrl + $scope.barangay.barangayId + imageExtension;
-        // $scope.barangay.imageSrc =  imageUrl + $scope.barangay.barangayId + imageExtension;
+        $scope.barangay.barangayImageSrc =  'assets/images/barangay_map/' + $scope.barangay.barangayId + '.png';
         $scope.barangay.selected ={};
 
         $scope.barangay.search = function(str) {
@@ -77,6 +77,14 @@ app.controller('barangayController',[
             $scope.barangay.nameList = barangayDataService.getBarangayNames();
         };
 
+        $scope.barangay.getBarangayName = function(){
+            return _.filter($scope.barangay.nameList,function(data){
+                var temp = _.replace(_.replace(data.name,' ',''),'-','').toLowerCase();
+                return temp === $scope.barangay.barangayId;
+            })[0].name;
+        };
+
+
     
         //Slick JS codes by Darwin Maturan
         $('.slider-for').slick({
@@ -113,7 +121,6 @@ app.controller('barangayController',[
                 var id=$(this).attr('href');
                 $('.collapse').collapse('hide');
                 $(id).collapse('show');
-          })
-        
+          });
     }
 ]);

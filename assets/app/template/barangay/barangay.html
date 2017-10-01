@@ -24,13 +24,13 @@
         
 
 
-        <section class="mapDescripption container-fluid">
+        <section class="mapDescripption container-fluid" data-ng-if="barangay.barangayId!=='main'">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 text-center">
-                        <img data-ng-src="{{barangay.imageSrc}}" alt="">
+                        <img data-ng-src="{{barangay.barangayImageSrc}}" alt="">
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 sanRoque">
                         <br />
-                        <h2>SAN ROQUE</h2>
+                        <h2>{{barangay.getBarangayName()}}</h2>
                         <hr />
                         <br/>
                                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
