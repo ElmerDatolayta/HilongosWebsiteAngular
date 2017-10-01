@@ -152,96 +152,66 @@
         & .bannercontent{
             height: 100vh;
             width: 100%;
-            background-size: 100% 100%;
+            background-size: cover;
             background-repeat: no-repeat;
         }
     }
     #about{
         position: relative;
-        height: 60vh;
+        height: 100%;
         padding:4% 0;
-        & .container{
-            width: 90vw;
-        }
-        & #bannerimage{
-            position: absolute;
-            top:0;
-            left: 0;
-            margin-bottom: 0 !important;
-            height: 60vh;
-            width: 100%;
-            & .slick-dots{
-                bottom:5px;
-                width: 25%;
-                right: 8px;
-                z-index: 10;
-                & li{
-                    border:2px solid #eee;
-                    border-radius: 99%;
-                    height: 12px;
-                    width: 12px;
-                    & button:before{
-                        font-size: 12px;
-                        color:transparent;
-                    }
-                }
-                & .slick-active{
-                    background-color:#eee;
-                }
-            }
-            & .bannercontent{
-                height:60vh;
-                width: 100%;
-            }
-        }
+        background-size: cover;
         & .overlay{
             position: absolute;
             top:0;
             left: 0;
             background-color: #000;
-            height: 60vh;
+            height: 100%;
             width: 100%;
             z-index: 1;
             opacity: .5;
         }
-        & .col-md-6{
-            height: 100%;
-            position: relative;
-            z-index: 2;
-            text-align: center;
-            & h2{
+        & .container{
+            width: 90vw;
+            & .col-md-6{
+                height: 100%;
+                position: relative;
+                z-index: 2;
                 text-align: center;
-                font-size: 2.8em;
-                font-family: monseratReg;
-                color:#fff;
-                & span{
-                    color:#fff000;
+                & h2{
+                    text-align: center;
+                    font-size: 2.8em;
+                    font-family: monseratReg;
+                    color:#fff;
+                    & span{
+                        color:#fff000;
+                    }
+                }
+                & p{
+                    text-align: justify;
+                    padding:20px 40px 0 40px;
+                    font-family: Century Gothic;
+                    color:#fff;
+                    font-size: 1.2em;
+                    & span{
+                        padding-left: 50px;
+                    }
+                }
+                & a{
+                    border:none;
+                    font-size: 1.2em;
+                    background-color: #19b197;
+                    font-family: Arial Rounded MT;
+                    font-weight: bold;
+                    border-radius: 30px;
+                    padding:3px 20px;
+                }
+                & a:hover{
+                    background-color: #fcc621;
+                    transition: all .3s ease-in-out,.5s ease-in-out;
                 }
             }
-            & p{
-                text-align: justify;
-                padding:20px 40px 0 40px;
-                font-family: Century Gothic;
-                color:#fff;
-                font-size: 1.2em;
-                & span{
-                    padding-left: 50px;
-                }
-            }
-            & a{
-                border:none;
-                font-size: 1.2em;
-                background-color: #19b197;
-                font-family: Arial Rounded MT;
-                font-weight: bold;
-                border-radius: 30px;
-                padding:3px 20px;
-            }
-            & a:hover{
-                background-color: #fcc621;
-                transition: all .3s ease-in-out,.5s ease-in-out;
-            }
-        }
+        }    
     }
     #serve{
         padding: 4% 0;
@@ -619,15 +589,140 @@
         }
     }
 }
+@media (max-width:1024px){
+    .navbar{
+        & .container{
+            max-width: 100%;
+            width: 100%;
+            & .collapse{
+                & .nav{
+                    & .nav-item{
+                        margin-right: 2px;
+                        & .nav-link{
+                        }
+                    }
+                }
+                & .navbar-right{
+                    float: none !important;
+
+                }
+            }
+        }
+    }
+    #welcome{
+        & .col-md-6{
+            height: 100%;
+            width: 100%;
+            & #welcometext{
+                width: 100%;
+                position: absolute;
+                bottom:10vh;
+                text-align: center;
+                left: 0;
+                & h2{
+                    text-align: center;
+                    color:#fff;
+                    line-height: .8em;
+                    font-size: 15vw;
+                    font-family: Trojan Pro;
+                }
+                & h2:first-letter{
+                    font-family: Messenger;
+                    color:#fff200;
+                    font-size:1.2em;
+                    padding-right: 2px;
+                }
+                & h2:last-child{
+                    position: relative;
+                    right:-20px;
+                }
+                & a{
+                    
+                    //max-width: 80%;
+                    margin: 0 auto;
+                    border:none;
+                    font-size: 3vh;
+                }
+                & #learn{
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
 @media (max-width:768px){
     .navbar{
         padding: 0 5%;
         & .container{
             max-width: 725px;
+            & .navbar-header{
+                & button{
+                    display: block !important;
+                }
+            }
+            & .collapse{
+                display: none !important;
+            }
         }
     }
     footer{
         text-align: center;
+    }
+    #bannerimage{
+        & .slick-dots{
+            bottom:5vw;
+            z-index: 2;
+            & li{
+                border:0.3vh solid #eee;
+                border-radius: 99%;
+                height: 2vh;
+                width: 2vh;
+                & button:before{
+                    font-size: 12px;
+                    color:transparent;
+                }
+            }
+        }
+    }
+    #welcome{
+        & .col-md-6{
+            height: 100%;
+            & #welcometext{
+                width: 98%;
+                position: absolute;
+                bottom:10vh;
+                text-align: center;
+                left: 0;
+                & h2{
+                    text-align: center;
+                    color:#fff;
+                    line-height: .8em;
+                    font-size: 15vw;
+                    font-family: Trojan Pro;
+                }
+                & h2:first-letter{
+                    font-family: Messenger;
+                    color:#fff200;
+                    font-size:1.2em;
+                    padding-right: 2px;
+                }
+                & h2:last-child{
+                    position: relative;
+                    right:-20px;
+                }
+                & a{
+                    display: block;
+                    max-width: 50%;
+                    margin: 0 auto;
+                    border:none;
+                    font-size: 3vh;
+                }
+                & #learn{
+                    margin: 0 auto;
+                    margin-bottom: 2%;
+                }
+            }
+        }
     }
 }
 @media (max-width:450px){
@@ -673,8 +768,48 @@
             & .navbar-header{
                 & .navbar-brand{
                     & img{
-                        width: 110px;
+                        width: 180px;
                     }
+                }
+            }
+        }
+    }
+    #welcome{
+        & .col-md-6{
+            height: 100%;
+            & #welcometext{
+                width: 98%;
+                position: absolute;
+                bottom:10vh;
+                text-align: center;
+                left: 0;
+                & h2{
+                    text-align: center;
+                    color:#fff;
+                    line-height: .8em;
+                    font-size: 4em;
+                    font-family: Trojan Pro;
+                }
+                & h2:first-letter{
+                    font-family: Messenger;
+                    color:#fff200;
+                    font-size:1.2em;
+                    padding-right: 2px;
+                }
+                & h2:last-child{
+                    position: relative;
+                    right:-20px;
+                }
+                & a{
+                    display: block;
+                    max-width: 50%;
+                    margin: 0 auto;
+                    border:none;
+                    font-size: 3vh;
+                }
+                & #learn{
+                    margin: 0 auto;
+                    margin-bottom: 2%;
                 }
             }
         }

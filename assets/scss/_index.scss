@@ -95,6 +95,7 @@ body{
         width: 90vw;
         height: 100%;
         & .navbar-header{
+            height: 100%;
             & button{
                 margin-top: 28px;
                 border:none;
@@ -106,6 +107,10 @@ body{
                 }
             }
             & .navbar-brand{
+                padding: 0;
+                height: 100%;
+                display: flex;
+                align-items: center;
                 & img{
                     height:8vh;
                     width: 30vh;
@@ -122,7 +127,7 @@ body{
                    align-items: center;
                     margin-right: 2vh;
                     & .nav-link{
-                        font-size: 3vh;
+                        font-size: 1.5vh;
                         color:#fff;
                         font-family: monseratReg;
                     }
@@ -172,10 +177,14 @@ body{
         height: 10vh;
         & .container{
             & .navbar-header{
+                height: 100%;
                 & .navbar-brand{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
                     & img{
-                        height:8vh;
-                        width: 30vh;
+                        height:6vh;
+                        width: 20vh;
                     }
                 } 
             }
@@ -185,10 +194,10 @@ body{
                     & .nav-item{
                         height: 100%;
                         display: flex;
-                       align-items: center;
+                        align-items: center;
                         margin-right: 2vh;
                         & .nav-link{
-                            font-size: 3vh;
+                            font-size: 2vh;
                             color:#fff;
                             font-family: monseratReg;
                         }
@@ -254,13 +263,13 @@ body{
                 text-align: center;
                 color:#fff;
                 line-height: 12vh;
-                font-size: 15vh;
+                font-size: 11vh;
                 font-family: Trojan Pro;
             }
             & h2:first-letter{
                 font-family: Messenger;
                 color:#fff200;
-                font-size:1.2em;
+                font-size:1.5em;
                 padding-right: 2px;
             }
             & h2:last-child{
@@ -270,10 +279,10 @@ body{
             & a{
                 box-shadow: 0 1vh 2vh #000;
                 border:none;
-                padding: 1.5vh 2.5vh;
+                padding: 1.2vh 2.5vh;
                 font-family: Arial, Helvetica;
                 font-weight: bold;
-                font-size: 3vh;
+                font-size: 2vh;
                 border:.5vh solid transparent;
             }
             & a:hover{
@@ -291,6 +300,7 @@ body{
                 transition: all .3s ease-in-out, all .3s ease-in-out;
             }
             & #learn{
+                margin-right: 1%;
                 background-color: #11bfa0;
                 transition: background-color .3s ease-in-out, background-color .3s ease-in-out;
             }
@@ -308,43 +318,8 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
-    height: 60vh;
+    height: 100%;
     padding:4% 0;
-    & .container{
-        width: 90vw;
-        height: 100%;
-    }
-    & #bannerimage{
-        position: absolute;
-        top:0;
-        left: 0;
-        margin-bottom: 0 !important;
-        height: 60vh;
-        width: 100%;
-        & .slick-dots{
-            bottom:2vh;
-            width: 25%;
-            right: 8px;
-            z-index: 10;
-            & li{
-                border:2px solid #eee;
-                border-radius: 99%;
-                height: 2vh;
-                width: 2vh;
-                & button:before{
-                    font-size: 12px;
-                    color:transparent;
-                }
-            }
-            & .slick-active{
-                background-color:#eee;
-            }
-        }
-        & .bannercontent{
-            height:60vh;
-            width: 100%;
-        }
-    }
     & .overlay{
         position: absolute;
         top:0;
@@ -355,44 +330,79 @@ body{
         z-index: 1;
         opacity: .5;
     }
-    & .col-md-6{
+    & .container{
+        width: 90vw;
         height: 100%;
-        position: relative;
-        z-index: 2;
-        text-align: center;
-        & h2{
+        & .col-md-6{
+            height: 100%;
+            position: relative;
+            z-index: 2;
             text-align: center;
-            font-size: 6vh;
-            font-family: monseratReg;
-            color:#fff;
-            & span{
-                color:#fff000;
+            & h2{
+                text-align: center;
+                font-size: 6vh;
+                font-family: monseratReg;
+                color:#fff;
+                & span{
+                    color:#fff000;
+                }
             }
-        }
-        & p{
-            text-align: justify;
-            padding:20px 40px 0 40px;
-            font-family: Century Gothic;
-            color:#fff;
-            font-size: 3vh;
-            & span{
-                padding-left: 50px;
+            & p{
+                text-align: justify;
+                padding:20px 40px 0 40px;
+                font-family: Century Gothic;
+                color:#fff;
+                font-size: 3vh;
+                & span{
+                    padding-left: 50px;
+                }
             }
-        }
-        & a{
-            border:none;
-            font-size: 3vh;
-            background-color: #19b197;
-            font-family: Arial Rounded MT;
-            font-weight: bold;
-            border-radius: 100px;
-            padding:6px 40px;
-        }
-        & a:hover{
-            background-color: #fcc621;
-            transition: all .3s ease-in-out,.5s ease-in-out;
+            & a{
+                border:none;
+                font-size: 3vh;
+                background-color: #19b197;
+                font-family: Arial Rounded MT;
+                font-weight: bold;
+                border-radius: 100px;
+                padding:6px 40px;
+            }
+            & a:hover{
+                background-color: #fcc621;
+                transition: all .3s ease-in-out,.5s ease-in-out;
+            }
         }
     }
+    // & #bannerimage{
+    //     position: absolute;
+    //     top:0;
+    //     left: 0;
+    //     margin-bottom: 0 !important;
+    //     height: 60vh;
+    //     width: 100%;
+    //     & .slick-dots{
+    //         bottom:2vh;
+    //         width: 25%;
+    //         right: 8px;
+    //         z-index: 10;
+    //         & li{
+    //             border:2px solid #eee;
+    //             border-radius: 99%;
+    //             height: 2vh;
+    //             width: 2vh;
+    //             & button:before{
+    //                 font-size: 12px;
+    //                 color:transparent;
+    //             }
+    //         }
+    //         & .slick-active{
+    //             background-color:#eee;
+    //         }
+    //     }
+    //     & .bannercontent{
+    //         height:60vh;
+    //         width: 100%;
+    //     }
+    // }
 }
 #serve{
     padding: 6% 0;
@@ -454,7 +464,7 @@ body{
     }
 }
 #view{
-    height: 90vh;
+    height: 80vh;
     width: 100%;
     position: relative;
     & .overlay{
@@ -462,23 +472,13 @@ body{
         top: 0;
         left: 0;
         width: 100%;
-        height: 90vh;
+        height: 80vh;
         background-color: #000;
         opacity: .6;
     }
     & img{
         width: 100%;
         height: 100%;
-    }
-    & #box1{
-        margin: 0 auto;
-        width: 80%;
-        height: 50vh;
-        border:2px solid #fff;
-        background-color: transparent;
-        position: absolute;
-        top: 25%;
-        left: 10%;
     }
     & h2{
         position: absolute;
@@ -495,16 +495,26 @@ body{
         }
     }
     & #box2{
-        padding-top: 4%;
+        padding: 4% 0;
         margin: 0 auto;
         width: 70%;
-        height: 60vh;
+        //height: 60vh;
         border:2px solid #fff;
         background-color: transparent;
         position: absolute;
         top: 20%;
         left: 15%;
         text-align: center;
+        & #box1{
+            margin: 0 auto;
+            width: 120%;
+            height:70%;
+            border:2px solid #fff;
+            background-color: transparent;
+            position: absolute;
+            top: 15%;
+            left: -10%;
+        }
         & h3{
             text-align: center;
             padding-top: 2%;
@@ -731,7 +741,7 @@ body{
 }
 #map{
     position: relative;
-    height: 60vh;
+    height: 100%;
     width: 100%;
     & iframe{
         position: absolute;
@@ -739,15 +749,18 @@ body{
         left: 0;
     }
     & .col-md-4{
+        position: relative;
         height: 100%;
-        padding-top: 5%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        padding-left: 2%;
         & #touch{
             font-family: Century Gothic;
             border-radius: 10px;
             //height: 40vh;
-            width: 30vh;
-            padding:2% 5%;
-            max-width: 70%;
+            width: 33vh;
+            padding:4% 5% 2% 5%;
+            //max-width: 70%;
             background-color: #51cab2;
             & h2{
                 font-weight: bold;
@@ -762,12 +775,13 @@ body{
                     margin-bottom: 10px;
                 }
                 & input{
-                    font-size: 1vh !important;
-                    height: 2vh;
+                    font-size: 1.8vh !important;
+                    height: 3vh;
+                    padding: 2%;
                 }
                 & textarea{
-                    height: 12vh;
-                    font-size: 1vh !important;
+                    height: 14vh;
+                    font-size: 2vh !important;
                 }
                 & p{
                     margin-top: 5%;
