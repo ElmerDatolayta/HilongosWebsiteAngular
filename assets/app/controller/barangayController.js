@@ -24,6 +24,7 @@ app.controller('barangayController',[
         var imageUrl = 'assets/images/map_search/';
         var imageExtension = '.jpg';
         $scope.barangay.imageSrc =  imageUrl + $scope.barangay.barangayId + imageExtension;
+        // $scope.barangay.imageSrc =  imageUrl + $scope.barangay.barangayId + imageExtension;
         $scope.barangay.selected ={};
 
         $scope.barangay.search = function(str) {
