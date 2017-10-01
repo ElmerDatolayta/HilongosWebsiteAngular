@@ -64,6 +64,26 @@ body{
         }
     }
 }
+.half-banner {
+    position: relative;
+    .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000;
+        opacity: .3;
+        height: 450px;
+        width: 100%;
+    }
+    .bg-image{
+        
+        background-image: url("../images/banner.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 450px;
+        width: 100%;
+    }
+}
 .navbar{
     background-color: transparent;
     height: 10vh;
@@ -111,26 +131,6 @@ body{
         }
     }
 }
-.half-banner {
-    position: relative;
-    .overlay{
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: #000;
-        opacity: .3;
-        height: 450px;
-        width: 100%;
-    }
-    .bg-image{
-        
-        background-image: url("../images/banner.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 450px;
-        width: 100%;
-    }
-}
 .scroll-change{
     background-color: #374354 !important;
     color:#000;
@@ -167,6 +167,39 @@ body{
         }
     }
 }
+@media (min-width:1400px){
+    .navbar{
+        height: 10vh;
+        & .container{
+            & .navbar-header{
+                & .navbar-brand{
+                    & img{
+                        height:8vh;
+                        width: 30vh;
+                    }
+                } 
+            }
+            & .collapse{
+                & .nav{
+                    height: 100%;
+                    & .nav-item{
+                        height: 100%;
+                        display: flex;
+                       align-items: center;
+                        margin-right: 2vh;
+                        & .nav-link{
+                            font-size: 3vh;
+                            color:#fff;
+                            font-family: monseratReg;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
 #bannerimage{
     position: absolute;
     margin-bottom: 0 !important;
@@ -241,13 +274,31 @@ body{
                 font-family: Arial, Helvetica;
                 font-weight: bold;
                 font-size: 3vh;
+                border:.5vh solid transparent;
+            }
+            & a:hover{
+                // box-shadow: 0 1vh 2vh #000;
+                // border:none;
+                // padding: 2vh 3vh;
+                // font-family: Arial, Helvetica;
+                // font-weight: bold;
+                // font-size: 3vh;
+                border:.5vh solid #374354;
+                cursor: pointer;
+                background-color: #fcc621 !important;
+                color:#fff !important;
+
+                transition: all .3s ease-in-out, all .3s ease-in-out;
             }
             & #learn{
                 background-color: #11bfa0;
+                transition: background-color .3s ease-in-out, background-color .3s ease-in-out;
             }
             & #intouch{
                 background-color: #fff200;
                 color:#000;
+
+                transition: background-color .3s ease-in-out, background-color .3s ease-in-out;
             }
         }
     }
@@ -385,7 +436,7 @@ body{
                 font-family: Arial Rounded MT;
                 font-weight: bold;
                 border-radius: 100px;
-                padding:3px 20px;
+                padding:1vh 2vh;
                 margin-bottom: 4%;
             }
         }
@@ -482,6 +533,7 @@ body{
         }
         & a:hover{
             background-color: #fcc621;
+            text-decoration: none;
             transition: all .3s ease-in-out,.5s ease-in-out;
         }
     }
@@ -693,7 +745,7 @@ body{
             font-family: Century Gothic;
             border-radius: 10px;
             //height: 40vh;
-            width: 35vh;
+            width: 30vh;
             padding:2% 5%;
             max-width: 70%;
             background-color: #51cab2;
@@ -710,11 +762,12 @@ body{
                     margin-bottom: 10px;
                 }
                 & input{
-                    font-size: 2vh !important;
-                    height: 4vh;
+                    font-size: 1vh !important;
+                    height: 2vh;
                 }
                 & textarea{
-                    height: 15vh;
+                    height: 12vh;
+                    font-size: 1vh !important;
                 }
                 & p{
                     margin-top: 5%;
@@ -742,6 +795,8 @@ footer{
         width: 90vw;
         & .row{
             & .col-xs-12{
+                // border-right: 10px solid #9ba1aa;
+                height: 100% !important;
                 & img{
                     width: 80%;
                 }
