@@ -352,6 +352,144 @@
             }
         }
     }
+    #tourist{
+        width: 100%;
+        height: 100%;
+        #spot{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            & #image-left{
+                width: 30%;
+                display: flex;
+                flex-grow: 1;
+                flex-direction: column;
+                & .imagecontent{
+                    flex-grow: 1;
+                    width: 100%;
+                    height: 50%;
+                    position: relative;
+                    overflow: hidden;
+                    & .imagehover{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        & .overlay{ @include overlay()}
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    & .info{ @include info()}
+                    
+                    }
+                    & .imagehover:hover{
+                        & .overlay{
+                            opacity: .6;
+                            transition: opacity .3s ease-in-out, opacity .5s ease-in-out;
+                        }
+                        & .info{
+                            top:0;
+
+                            transition: top .3s ease-in-out, top .5s ease-in-out;
+                        }
+                    }
+                }
+            }
+            & #center-image{
+                flex-grow: 2;
+                width: 40%;
+                position: relative;
+                overflow: hidden;
+                & .imagehover{
+                    width: 100%;
+                    height: 100%;
+                & .overlay{ @include overlay()}
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+                & .info{ @include info()}
+            }
+                & .imagehover:hover{
+                    & .overlay{
+                        opacity: .6;
+                        transition: opacity .3s ease-in-out, opacity .5s ease-in-out;
+                    }
+                    & .info{
+                        top:0;
+
+                        transition: top .3s ease-in-out, top .5s ease-in-out;
+                    }
+                }
+            }
+            & #image-right{
+                display: flex;
+                width: 30%;
+                flex-direction: column;
+                flex-grow: 1;
+                & .imagecontent{
+                    overflow: hidden;
+                    width: 100%;
+                    height: 50%;
+                    flex-grow: 1;
+                    position: relative;
+                    & .imagehover{
+                        width: 100%;
+                    & .overlay{ @include overlay()}
+                    & img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                    & .info{ @include info()}
+                }
+                    & .imagehover:hover{
+                        & .overlay{
+                            opacity: .6;
+                            transition: opacity .3s ease-in-out, opacity .5s ease-in-out;
+                        }
+                        & .info{
+                            top:0;
+
+                            transition: top .3s ease-in-out, top .5s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+        & #spot2{
+            display: flex;
+            width: 100%;
+            height: 40vh;
+            & .image-content{
+                flex-grow: 1;
+                width: 33.33%;
+                height: 100%;
+                position: relative;
+                overflow: hidden;
+                & .imagehover{
+                    height: 100%;
+                    width: 100%;
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+                & .overlay{ @include overlay()}
+                & .info{ @include info()}
+            }
+                & .imagehover:hover{
+                    & .overlay{
+                        opacity: .6;
+                        transition: opacity .3s ease-in-out, opacity .5s ease-in-out;
+                    }
+                    & .info{
+                        top:0;
+                        transition: top .3s ease-in-out, top .5s ease-in-out;
+                
+            }
+        }
+    }
+}
+    }
     #map{
         position: relative;
         height: 80vh;
