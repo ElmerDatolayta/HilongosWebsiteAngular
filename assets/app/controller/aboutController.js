@@ -8,6 +8,8 @@ app.controller('aboutController',[
         sharedDateService
     )
     {
-        
+        $scope.about = {};
+
+        $scope.about.tabs = 1;
     }
 ]);
