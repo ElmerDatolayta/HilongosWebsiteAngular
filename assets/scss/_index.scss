@@ -183,7 +183,7 @@ body{
                     display: flex;
                     align-items: center;
                     & img{
-                        height:6vh;
+                        height:5vh;
                         width: 20vh;
                     }
                 } 
@@ -470,9 +470,6 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     & .row{
-        & h2{
-            position: relative;
-        }
         & .overlay{
             position: absolute;
             top: 0;
