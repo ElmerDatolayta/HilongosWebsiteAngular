@@ -75,6 +75,16 @@
             }
         }
     }
+    #tourist{
+        & #image-right{
+            & .imagecontent{
+                height: 100%;
+                & .imagehover{
+                    height: 100%;
+                }
+            }
+        }
+    }
     footer{
         & .container{
             & .row{
@@ -82,6 +92,11 @@
                     text-align: center;
                     & img{
                         width: 50%;
+                    }
+                }
+                & .col-xs-12:last-child{
+                    & .social{
+                        justify-content: center;
                     }
                 }
             }
@@ -645,6 +660,17 @@
                 }
                 & #learn{
                     margin: 0 auto;
+                }
+            }
+        }
+    }
+    #tourist{
+        & #spot{
+            & #image-right{
+                & .imagecontent{
+                    & .imagehover{
+                        height: 100%;
+                    }
                 }
             }
         }
