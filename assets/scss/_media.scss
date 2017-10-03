@@ -68,7 +68,7 @@
 
 @media (max-width:768px) And (min-width:450px){
     #map{
-        height: 70vh;
+        height: 100%;
         & .col-md-4{
             & #touch{
                 margin: 0 auto;
@@ -286,7 +286,7 @@
         }
     }
     #view{
-        height: 90vh;
+        height: 100%;
         width: 100%;
         position: relative;
         & .overlay{
@@ -294,49 +294,9 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 90vh;
+            height: 100%;
             background-color: #000;
             opacity: .6;
-        }
-        & img{
-            width: 100%;
-            height: 100%;
-        }
-        & #box1{
-            margin: 0 auto;
-            width: 80%;
-            height: 50vh;
-            border:2px solid #fff;
-            background-color: transparent;
-            position: absolute;
-            top: 25%;
-            left: 10%;
-        }
-        & #box2{
-            margin: 0 auto;
-            width: 70%;
-            height: 60vh;
-            border:2px solid #fff;
-            background-color: transparent;
-            position: absolute;
-            top: 20%;
-            left: 15%;
-            & h2{
-                text-align: center;
-                padding-top: 10%;
-                color:#f8bd00;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                & span{
-                    color:#fff;
-                    text-transform: capitalize;
-                }
-            }
-            & p{
-                width: 65%;
-                margin: 0 auto;
-                color:#fff;
-                text-align: justify;
-            }
         }
     }
     #tourist{
@@ -479,7 +439,7 @@
     }
     #map{
         position: relative;
-        height: 80vh;
+        height: 100%;
         width: 100%;
         & iframe{
             position: absolute;
@@ -664,6 +624,41 @@
             }
         }
     }
+    #view{
+        height: 100%;
+        width: 100%;
+        padding:5%;
+        background-size: cover;
+        & .row{
+            & #contentview{
+                & h2{
+                    font-size: 3.1em;
+                }
+                & #box2{
+                    & #box1{
+                        & #contentdesc{
+                            & h3{
+                            }
+                            & p{
+                                text-align: center;
+                            }
+                            & a{
+                                font-size: 2vh;
+                                width:50%;
+                                margin-bottom: 3%; 
+                            }
+                            & a:hover{
+                                background-color: #fcc621;
+                                text-decoration: none;
+                                transition: all .3s ease-in-out,.5s ease-in-out;
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
     #tourist{
         & #spot{
             & #image-right{
@@ -680,14 +675,44 @@
     .navbar{
         padding: 0 5%;
         & .container{
-            max-width: 725px;
-            & .navbar-header{
-                & button{
-                    display: block !important;
-                }
-            }
+            max-width: 90%;
             & .collapse{
                 display: none !important;
+            }
+        }
+    }
+    #view{
+        height: 100%;
+        width: 100%;
+        padding:5%;
+        background-size: cover;
+        & .row{
+            & #contentview{
+                & h2{
+                    font-size: 3.1em;
+                }
+                & #box2{
+                    & #box1{
+                        & #contentdesc{
+                            & h3{
+                            }
+                            & p{
+                                text-align: center;
+                            }
+                            & a{
+                                font-size: 2vh;
+                                width:60%;
+                                margin-bottom: 3%; 
+                            }
+                            & a:hover{
+                                background-color: #fcc621;
+                                text-decoration: none;
+                                transition: all .3s ease-in-out,.5s ease-in-out;
+                            }
+    
+                        }
+                    }
+                }
             }
         }
     }
@@ -752,11 +777,11 @@
     }
 }
 @media (max-width:450px){
-    #about{ 
+    #about{
         & .container{
             & .col-md-6{
                 & p{
-                    padding:0;
+                    padding:2%;
                 }
             }
         }
@@ -821,32 +846,42 @@
             }
         }
     }
+    #serve{
+        & h2{
+            font-size: 1.5em;
+        }
+    }
     #view{
         height: 100%;
         width: 100%;
-        padding:4%;
+        padding:5%;
         background-size: cover;
         & .row{
-            & h2{
-                position: relative ;
-            }
-            & #box2{
-                border:none;
-                width: 100%;
-                left: 0;
-                position: relative;
-    
-                & #box1{
-                    border:none;
-                }
+            & #contentview{
                 & h2{
-                    padding-top: 0;
-                    text-align: center;
-                    padding: 2%;
+                    font-size: 3.1em;
                 }
-                & p{
-                    margin-bottom:5%;
-                    width: 90%;
+                & #box2{
+                    & #box1{
+                        & #contentdesc{
+                            & h3{
+                            }
+                            & p{
+                                text-align: center;
+                            }
+                            & a{
+                                font-size: 2vh;
+                                width:80%;
+                                margin-bottom: 3%; 
+                            }
+                            & a:hover{
+                                background-color: #fcc621;
+                                text-decoration: none;
+                                transition: all .3s ease-in-out,.5s ease-in-out;
+                            }
+    
+                        }
+                    }
                 }
             }
         }
@@ -895,6 +930,13 @@
                     & .overlay{ @include overlay1()}
                     & .info{@include info1()}
                 }
+            }
+        }
+    }
+    #map{
+        & .col-md-5{
+            & #touch{
+                margin: 0 auto;
             }
         }
     }

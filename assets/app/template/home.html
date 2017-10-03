@@ -58,19 +58,23 @@
 <section id="view"  class="container-fluid" style = "background-image:url('assets/images/hilongos_church.jpg')">
     <div class="row">
         <div class="overlay"></div>
-        <!-- <img src="assets/images/hilongos_church.jpg" alt=""> -->
-        
-        <h2>It's more fun in <span>Hilongos</span></h2>
-        <div id="box2">
-            <div id="box1"></div>
-            <h3 id = "label"></h3>
-            <p>		There are many variations of passages of Lorem Ipsum available,
-            but the majority have suffered alteration in some form, 
-            by injected humour, or randomised words which don't look
-                even slightly believable. If you are going to use a passage
-                of Lorem Ipsum, you need to be sure there isn't anything 
-                embarrassing hidden in the middle of text. etc...</p>
-            <a href="">View More</a>
+        <div id="contentview">
+            <h2>It's more fun in <span>Hilongos</span></h2>
+            <div id="box2">
+                <div id="box1">
+                    <div id="contentdesc">
+                        <h3 id = "label"></h3>
+                        <p>		There are many variations of passages of Lorem Ipsum available,
+                        but the majority have suffered alteration in some form, 
+                        by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage
+                            of Lorem Ipsum, you need to be sure there isn't anything 
+                            embarrassing hidden in the middle of text. etc...</p>
+                        <a href="">View More</a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -181,10 +185,10 @@
     </div>
 </section>
 <section id="map">
-        <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62790.36816862614!2d124.81746336108594!3d10.389929024917878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33076e92da77cfd7%3A0x2945b1c797251bc2!2sHilongos%2C+Leyte!5e0!3m2!1sen!2sph!4v1506852319824" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="container-fluid">
+            <iframe id="map_canvas" name="map_canvas" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d185582.25559151774!2d124.8567032!3d10.3908307!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33076e92da77cfd7%3A0x2945b1c797251bc2!2sHilongos%2C+Leyte!5e0!3m2!1sen!2sph!4v1507030014847&z=15&amp;ll=10.3932206,124.8297226" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="row">
-                <div class="col-xs-12 col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8 col-lg-4 col-lg-offset-8">
+                <div class="col-xs-12 col-sm-6 col-sm-offset-6 col-md-5 col-md-offset-7 col-lg-5 col-lg-offset-7">
                     <div id = "touch">
                         <h2>GET IN TOUCH</h2>
                         <form action="">

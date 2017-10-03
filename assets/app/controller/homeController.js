@@ -61,6 +61,7 @@ app.controller('homeController',[
                     scrollTop: num
                 }, 600);
             });
+           
         });
     }
 ]);
