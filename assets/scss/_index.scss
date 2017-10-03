@@ -288,13 +288,6 @@ body{
                 border:.5vh solid transparent;
             }
             & a:hover{
-                // box-shadow: 0 1vh 2vh #000;
-                // border:none;
-                // padding: 2vh 3vh;
-                // font-family: Arial, Helvetica;
-                // font-weight: bold;
-                // font-size: 3vh;
-                border:.5vh solid #374354;
                 cursor: pointer;
                 background-color: #fcc621 !important;
                 color:#fff !important;
@@ -514,7 +507,7 @@ body{
                             margin: 0 auto;
                             text-align: center;
                             font-size: 2vh;
-                            width:10%;
+                            width:20%;
                             margin-bottom: 3%; 
                         }
                         & a:hover{

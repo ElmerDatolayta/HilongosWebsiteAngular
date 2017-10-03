@@ -65,44 +65,6 @@
         }
     }
 }
-
-@media (max-width:768px) And (min-width:450px){
-    #map{
-        height: 100%;
-        & .col-md-4{
-            & #touch{
-                margin: 0 auto;
-            }
-        }
-    }
-    #tourist{
-        & #image-right{
-            & .imagecontent{
-                height: 100%;
-                & .imagehover{
-                    height: 100%;
-                }
-            }
-        }
-    }
-    footer{
-        & .container{
-            & .row{
-                & .col-xs-12{
-                    text-align: center;
-                    & img{
-                        width: 50%;
-                    }
-                }
-                & .col-xs-12:last-child{
-                    & .social{
-                        justify-content: center;
-                    }
-                }
-            }
-        }
-    }
-}
 @media (max-width: 1400px) AND (min-width:1024px){
     .navbar{
         height: 80px;
@@ -573,8 +535,6 @@
                 & .nav{
                     & .nav-item{
                         margin-right: 2px;
-                        & .nav-link{
-                        }
                     }
                 }
                 & .navbar-right{
@@ -637,8 +597,6 @@
                 & #box2{
                     & #box1{
                         & #contentdesc{
-                            & h3{
-                            }
                             & p{
                                 text-align: center;
                             }
@@ -680,44 +638,6 @@
                 display: none !important;
             }
         }
-    }
-    #view{
-        height: 100%;
-        width: 100%;
-        padding:5%;
-        background-size: cover;
-        & .row{
-            & #contentview{
-                & h2{
-                    font-size: 3.1em;
-                }
-                & #box2{
-                    & #box1{
-                        & #contentdesc{
-                            & h3{
-                            }
-                            & p{
-                                text-align: center;
-                            }
-                            & a{
-                                font-size: 2vh;
-                                width:60%;
-                                margin-bottom: 3%; 
-                            }
-                            & a:hover{
-                                background-color: #fcc621;
-                                text-decoration: none;
-                                transition: all .3s ease-in-out,.5s ease-in-out;
-                            }
-    
-                        }
-                    }
-                }
-            }
-        }
-    }
-    footer{
-        text-align: center;
     }
     #bannerimage{
         & .slick-dots{
@@ -771,6 +691,75 @@
                 & #learn{
                     margin: 0 auto;
                     margin-bottom: 2%;
+                }
+            }
+        }
+    }
+    #view{
+        height: 100%;
+        width: 100%;
+        padding:5%;
+        background-size: cover;
+        & .row{
+            & #contentview{
+                & h2{
+                    font-size: 3.1em;
+                }
+                & #box2{
+                    & #box1{
+                        & #contentdesc{
+                            & p{
+                                text-align: center;
+                            }
+                            & a{
+                                font-size: 2vh;
+                                width:60%;
+                                margin-bottom: 3%; 
+                            }
+                            & a:hover{
+                                background-color: #fcc621;
+                                text-decoration: none;
+                                transition: all .3s ease-in-out,.5s ease-in-out;
+                            }
+    
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #tourist{
+        & #image-right{
+            & .imagecontent{
+                height: 100%;
+                & .imagehover{
+                    height: 100%;
+                }
+            }
+        }
+    }
+    #map{
+        height: 100%;
+        & .col-md-4{
+            & #touch{
+                margin: 0 auto;
+            }
+        }
+    }
+    footer{
+        text-align: center;
+        & .container{
+            & .row{
+                & .col-xs-12{
+                    text-align: center;
+                    & img{
+                        width: 50%;
+                    }
+                }
+                & .col-xs-12:last-child{
+                    & .social{
+                        justify-content: center;
+                    }
                 }
             }
         }
