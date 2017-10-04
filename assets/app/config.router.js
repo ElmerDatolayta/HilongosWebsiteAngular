@@ -47,6 +47,7 @@ app.config([
         })
         .state('departmentSection', {
             url: '/department/:departmentId',
+            controller : 'departmentSectionController',
             templateUrl: 'assets/app/template/department/departmentSection/departmentView.html'
         });
 

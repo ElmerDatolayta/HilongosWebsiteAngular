@@ -52,7 +52,7 @@
                 height:278px;
             }
         }
-        & .col-md-6{
+        & .col-md-8{
             & h2{
                 font-size: 2em;
             }
@@ -150,7 +150,7 @@
         }
         & .container{
             width: 90vw;
-            & .col-md-6{
+            & .col-md-8{
                 height: 100%;
                 position: relative;
                 z-index: 2;
@@ -768,7 +768,7 @@
 @media (max-width:450px){
     #about{
         & .container{
-            & .col-md-6{
+            & .col-md-8{
                 & p{
                     padding:2%;
                 }

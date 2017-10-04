@@ -115,7 +115,6 @@ app.controller('barangayController',[
             slidesToShow: 3,
             slidesToScroll: 3
           });
-        
           $(".generalInformation .container .col-12 a").click(function(e){
                 e.preventDefault();
                 var id=$(this).attr('href');
