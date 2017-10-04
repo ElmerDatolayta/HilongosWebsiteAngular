@@ -209,6 +209,17 @@ body{
     #map{
         padding:3%
     }
+    footer{
+        & .container{
+            & .row{
+                & .col-md-6{
+                    & a{
+                        font-size: 2vh;
+                    }
+                }
+            }
+        }
+    }
     
 }
 #bannerimage{
@@ -328,7 +339,7 @@ body{
     & .container{
         width: 90vw;
         height: 100%;
-        & .col-md-6{
+        & .col-md-8{
             height: 100%;
             position: relative;
             z-index: 2;
@@ -347,7 +358,7 @@ body{
                 padding:20px 40px 0 40px;
                 font-family: Century Gothic;
                 color:#fff;
-                font-size: 3vh;
+                font-size: 2vh;
                 & span{
                     padding-left: 50px;
                 }

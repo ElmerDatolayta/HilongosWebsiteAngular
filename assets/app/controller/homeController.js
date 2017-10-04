@@ -4,11 +4,6 @@ app.controller('homeController',[
     '$scope',
     function($scope)
     {
-        $("section #about #bannerimage").slick({
-            arrows: false,
-            dots: true,
-            autoplay: true
-        });
         $(document).ready(function(){
             $("#tourist #spot #image-left .imagecontent .imagehover a").on("click",function(){
                 var x = $(this).attr("data-image");
