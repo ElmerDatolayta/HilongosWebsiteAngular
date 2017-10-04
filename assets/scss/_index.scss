@@ -91,6 +91,9 @@ body{
     margin-top: 2%;
 
     transition: all .3s ease-in-out,all .3s ease-in-out;
+    .nav-link-dark{
+        color: #000000 !important;
+    }
     & .container{
         width: 90vw;
         height: 100%;
@@ -164,9 +167,8 @@ body{
             & .nav{
                 & .nav-item{
                     & .nav-link{
-                        color:#eee;
+                        color:#eee !important;
                     }
-
                 }
             }
         }
