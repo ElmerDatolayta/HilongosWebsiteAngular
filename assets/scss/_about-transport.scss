@@ -1,0 +1,33 @@
+#trans{
+    & img{
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+    }
+    & h2{
+        display: inline-block;
+    }
+}
+#trans-banner{
+    display: flex;
+    height: 80vh;
+    width: 100%;
+    & .main-content-top{
+        flex-grow: 1;
+    }
+    & .main-content-bottom{
+        flex-grow: 2;
+        display: flex;
+        flex-direction: column;
+        & .content-top{
+            flex-grow: 1;
+            display: flex;
+            & .content-top-upper{
+                flex-grow: 1;
+            }
+            & .content-top-lower{
+                flex-grow: 1;
+            }
+        }
+    }
+}
