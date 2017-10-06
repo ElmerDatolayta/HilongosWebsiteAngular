@@ -49,6 +49,10 @@ app.config([
             url: '/department/:departmentId',
             controller : 'departmentSectionController',
             templateUrl: 'assets/app/template/department/departmentSection/departmentView.html'
+        })
+        .state('tourist', {
+            url: '/tourist',
+            templateUrl: 'assets/app/template/tourist/tourist.html'
         });
 
 	    $qProvider.errorOnUnhandledRejections(false);
