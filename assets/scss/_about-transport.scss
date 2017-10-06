@@ -1,32 +1,117 @@
-#trans{
+#trans, #health{
+    padding:2vh;
     & img{
-        width: 50px;
-        height: 50px;
+        width: 12vh;
+        height: 12vh;
         display: inline-block;
     }
     & h2{
         display: inline-block;
+        font-size: 4vh;
+        margin-bottom: 0;
+    }
+}
+@mixin tras-overlay(){
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    
+    transition: opacity .3s ease-in-out,opacity .3s ease-in-out;
+}
+
+@mixin trans-info(){
+    position: relative;
+    top: -80%;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    & h2{
+        text-align: center;
+        font-size: 3vh;
+        color:#fff;
+    }
+    & a{
+        border-radius: 0;
+        color:#fff;
+        padding: 1vh 3vh;
+        font-size: 3vh;
     }
 }
 #trans-banner{
     display: flex;
-    height: 80vh;
+    height: 70vh;
     width: 100%;
+    position: relative;
     & .main-content-top{
-        flex-grow: 1;
+        position: relative;
+        overflow: hidden;
+        flex-basis: 40%;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        & .overlay{@include tras-overlay()}
+        & .info{@include trans-info()}
+        
+    }
+    & .main-content-top:hover{
+       & .overlay{
+           opacity: 0.7;
+
+           transition: opacity .5s ease-in-out,opacity .5s ease-in-out;
+       }
+       & .info{
+           top:0;
+
+           transition: top .5s ease-in-out,top .5s ease-in-out;
+       } 
     }
     & .main-content-bottom{
-        flex-grow: 2;
+        flex-basis: 60%;
         display: flex;
         flex-direction: column;
         & .content-top{
             flex-grow: 1;
             display: flex;
+            background-size: 100% 100%;
+            background-repeat: no-repeat; 
             & .content-top-upper{
+                position: relative;
                 flex-grow: 1;
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+                & .overlay{@include tras-overlay()} 
+                & .info{@include trans-info()}
+            }
+            & .content-top-upper:hover{
+                & .overlay{
+                    opacity: 0.7;
+         
+                    transition: opacity .5s ease-in-out,opacity .5s ease-in-out;
+                }
             }
             & .content-top-lower{
+                
+                position: relative;
                 flex-grow: 1;
+                background-size: 100% 100%;
+                background-repeat: no-repeat; 
+                & .overlay{@include tras-overlay()}
+                & .info{@include trans-info()}
+            }
+            & .content-top-lower:hover{
+                & .overlay{
+                    opacity: 0.7;
+         
+                    transition: opacity .5s ease-in-out,opacity .5s ease-in-out;
+                }   
             }
         }
     }
