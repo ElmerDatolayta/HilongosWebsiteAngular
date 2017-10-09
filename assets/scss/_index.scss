@@ -767,12 +767,15 @@ body{
                 & p{
                     margin-top: 5%;
                     width: 100%;
-                    text-align: right;
+                    text-align: center;
                     & a{
                         background-color: #dfd047;
                         color:#000;
                         font-size: 2vh;
                         padding: 10px 70px;
+                        display: block;
+                        border-radius: 0;
+                        font-weight: bold;
                     }
                 }
             }

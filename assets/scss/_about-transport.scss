@@ -116,6 +116,29 @@
         }
     }
 }
+#health{
+    width: 100%;
+    height: 100%;
+    padding:2%;
+    & #trans-slider{
+        & #health-slider{
+            & .health-slider-item{
+                & img{
+                    width: 100%;
+                    height: 100%;
+                }
+                & h2{
+                    padding-left: 2%;
+                }
+                & .health-slider-item-info{
+                    & p{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width:480px){
     #trans-banner{
@@ -150,20 +173,19 @@
         height: 100%;
         flex-direction: column;
         & .main-content-top{
-            height: 80vw;
+            height: 70vw;
             width: 100%;
             display: block;
         }
         & .main-content-bottom{
             height: 100%;
             width: 100%;
-            display: flex;
+            flex-direction: column;
             & .content-top{
                 height: 100%;
                 width: 100%;
-                display: block;
                 & .content-top-upper, & .content-top-lower{
-                    height: 100vw;
+                    height: 40vh;
                     width: 100%;
                 }
             }
