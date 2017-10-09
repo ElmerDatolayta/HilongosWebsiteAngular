@@ -11,7 +11,7 @@
                 or randomised words which don't look even slightly believable. 
                 If you are going to use a passage of Lorem Ipsum
             </h2>
-            <a href="" class = "btn btn-success">Learn More</a>
+            <a href="" class = "btn btn-success">View Details</a>
         </div>
     </div>
     <div class="main-content-bottom">
@@ -143,27 +143,28 @@
 <script>
     $("#health #trans-slider #health-slider").slick({
         centerMode: true,
-  centerPadding: '60px',
-  slidesToShow: 3,
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 3
-      }
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
-        slidesToShow: 1
-      }
-    }
-  ]
+        arrows:true,
+        // autoplay: true,
+        infinite:true,
+        slidesToShow: 3,
+        adaptiveHeight: true,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                slidesToShow: 2
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
     });
 </script>

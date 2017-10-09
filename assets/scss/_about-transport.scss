@@ -118,21 +118,94 @@
 }
 #health{
     width: 100%;
-    height: 100%;
+    height: 95vh;
     padding:2%;
+    margin-bottom: 2vh;
+    overflow: hidden;
     & #trans-slider{
         & #health-slider{
+            padding:3%;
+            & .slick-list{
+                padding: 0 !important;
+            }
             & .health-slider-item{
+                height: 60vh;
+                background-color: #374254;
+                padding: .3% 0;
+                margin:5vh 0;
+                text-align: center;
                 & img{
-                    width: 100%;
-                    height: 100%;
+                    width: 90%;
+                    height: 70%;
                 }
                 & h2{
-                    padding-left: 2%;
+                    padding-left: 4%;
+                    text-align: left !important;
+                    width: 100%;
+                    color:#fff;
+                    font-size: 5vh;
                 }
                 & .health-slider-item-info{
+                    position: relative;
+                    width: 100%;
+                    color:#fff;
+                    z-index: 1;
                     & p{
-                        display: inline-block;
+                        width: 100%;
+                        text-align:left;
+                        padding-left: 4%;
+                        padding-top: 5%;
+                        font-size: 3vh;
+                    }
+                    & a{
+                        position: absolute;
+                        right: 5%;
+                        top: 15%;
+                        border-radius: 0;
+                        background-color: #fff;
+                        border:none;
+                        padding:1.2vh 4vh;
+                        color:#374254;
+                        font-size: 2vh;
+                    }
+                }
+            }
+            & .slick-active{
+                position: relative;
+                & .overlay{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top:0;
+                    left: 0;
+                    background-color: #000;
+                    opacity: .8;
+                    z-index: 2;
+                }
+            }
+            & .slick-current{
+                height: 70vh;
+                margin:0 1vh;
+                background-color: #61b872;
+                & img{
+                    width: 90%;
+                    // height: 100% !important;
+                }
+                & h2{
+                    color:#374254;
+                }
+                & .overlay{
+                    opacity: 0;
+                    z-index: 1;
+                }
+                & .health-slider-item-info{
+                    z-index: 2;
+                    & a{
+                        background-color: #374254;
+                        color:#fff;
+                    }
+                    & p{
+                        color:#374254;
                     }
                 }
             }
