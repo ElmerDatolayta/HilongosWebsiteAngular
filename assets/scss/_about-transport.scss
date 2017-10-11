@@ -26,7 +26,7 @@
 
 @mixin trans-info(){
     position: relative;
-    top: -80%;
+    top: -120%;
     z-index: 2;
     width: 100%;
     height: 100%;
@@ -45,11 +45,6 @@
         padding: 1vh 3vh;
         font-size: 3vh;
     }
-}
-#transpo-container{
-    max-width: 90%;
-    margin: 0 auto;
-    height: 100%;
 }
 #trans-banner{
     display: flex;
@@ -92,6 +87,8 @@
                 flex-grow: 1;
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
+                position: relative;
+                overflow: hidden;
                 & .overlay{@include tras-overlay()} 
                 & .info{@include trans-info()}
             }
@@ -101,6 +98,11 @@
          
                     transition: opacity .5s ease-in-out,opacity .5s ease-in-out;
                 }
+                & .info{
+                    top:0;
+         
+                    transition: top .5s ease-in-out,top .5s ease-in-out;
+                }
             }
             & .content-top-lower{
                 
@@ -108,6 +110,8 @@
                 flex-grow: 1;
                 background-size: 100% 100%;
                 background-repeat: no-repeat; 
+                position: relative;
+                overflow: hidden;
                 & .overlay{@include tras-overlay()}
                 & .info{@include trans-info()}
             }
@@ -116,7 +120,12 @@
                     opacity: 0.7;
          
                     transition: opacity .5s ease-in-out,opacity .5s ease-in-out;
-                }   
+                } 
+                & .info{
+                    top:0;
+         
+                    transition: top .5s ease-in-out,top .5s ease-in-out;
+                }  
             }
         }
     }
