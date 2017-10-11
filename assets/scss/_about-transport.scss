@@ -166,6 +166,7 @@
                     & img{
                         width: 90%;
                         height: 70%;
+                        filter: grayscale(100%);
                     }
                     & h2{
                         padding-left: 4%;
@@ -203,16 +204,16 @@
             & .slick-active{
                 position: relative;
                 & .health-container{
-                    // & .overlay{
-                    //     position: absolute;
-                    //     width: 100%;
-                    //     height: 100%;
-                    //     top:0;
-                    //     left: 0;
-                    //     background-color: #000;
-                    //     opacity: .8;
-                    //     z-index: 2;
-                    // }
+                    & .overlay{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top:0;
+                        left: 0;
+                        background-color: #000;
+                        opacity: .5;
+                        z-index: 2;
+                    }
                 }
             }
             & .slick-current{
@@ -222,7 +223,7 @@
                     background-color: #2BFA51;
                     & img{
                         width: 90%;
-                        // height: 100% !important;
+                        filter: none;
                     }
                     & h2{
                         color:#374254;
