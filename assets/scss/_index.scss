@@ -412,12 +412,19 @@ body{
                 width: 30vh;
                 height: 30vh;
                 overflow: hidden;
+                text-align: center;
+                margin: 0 auto;
+                border:1vh solid transparent;
+
+                transition: border .5s ease-in-out,border .5s ease-in-out;
                 & img{
                     border:2vh solid transparent;
                     border-radius: 100%;
                     height:100%;
                     width: 100%;
                     margin-bottom: 2vh;
+
+                    transition: all .5s ease-in-out,.5s ease-in-out;
                 }
             }
             
@@ -437,8 +444,13 @@ body{
             }
         }
         & .col-md-3:hover{
+            & .serveimage:hover{
+                border-color:  #11bfa0;
+
+                transition: border .5s ease-in-out,border .5s ease-in-out;
+            }
             & img{
-                border:0 solid #11bfa0;
+                border-width: 0;
                 transition: all .5s ease-in-out,.5s ease-in-out;
                 
             }
