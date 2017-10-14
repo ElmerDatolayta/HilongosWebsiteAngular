@@ -23,6 +23,35 @@
                     </li>
                 </ul>
             </div>
+            <div id="aboutTabsMd">
+                <img src="assets/images/hilongos-logo.png" height="100px" width="100px" style="z-index:1">
+                <ul class="nav nav-pills nav-justified">
+                    <li role="presentation" class="active" data-ng-model="about.tabs" uib-btn-radio="1"><a href="">Hilongos Profile</a><div class="triangle"></div></li>
+                    <li role="presentation" data-ng-model="about.tabs" uib-btn-radio="2"><a href="">Demographics</a><div class="triangle"></div></li>
+                    <li role="presentation" data-ng-model="about.tabs" uib-btn-radio="3"><a href="">History</a><div class="triangle"></div></li>
+                    <li role="presentation" data-ng-model="about.tabs" uib-btn-radio="4"><a href="">Transport / Health</a><div class="triangle"></div></li>
+                  </ul>
+            </div>
+            <div id="aboutTabsXs">
+                <img src="assets/images/hilongos-logo.png" height="80px" width="80px" style="z-index:1">
+                <div class="drop">
+                    <div class="option active placeholder" data-value="placeholder" data-ng-model="about.tabs">
+                        Choose wisely
+                    </div>
+                    <div class="option" data-value="1" data-ng-model="about.tabs">
+                        Hilongos Profile
+                    </div>
+                    <div class="option" data-value="2" data-ng-model="about.tabs">
+                        Demographics
+                    </div>
+                    <div class="option" data-value="3" data-ng-model="about.tabs">
+                        History
+                    </div>
+                    <div class="option" data-value="4" data-ng-model="about.tabs">
+                        Transport / Health
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <div>                    
@@ -31,4 +60,5 @@
         <ng-include ng-if="about.tabs === 3" src="'assets/app/template/about/tabs/history.html'"></ng-include>
         <ng-include ng-if="about.tabs === 4" src="'assets/app/template/about/tabs/transport-health.html'"></ng-include>                
     </div>
+   
 </div>

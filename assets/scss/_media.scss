@@ -1,4 +1,7 @@
 @media (max-width:950px) {
+    .navbar-nav{
+        display: none;
+    }
     .navbar{
         & .container{
             & .navbar-header{
@@ -63,6 +66,12 @@
                 font-size: 1em;
             }
         }
+    }
+    .navbar-header{
+        width: 100%;
+    }
+    .navbar-toggle{
+        display: block;
     }
 }
 @media (max-width: 1400px) AND (min-width:1024px){
@@ -559,7 +568,7 @@
                     text-align: center;
                     color:#fff;
                     line-height: .8em;
-                    font-size: 15vw;
+                    font-size: 8vw;
                     font-family: Trojan Pro;
                 }
                 & h2:first-letter{
@@ -669,7 +678,7 @@
                     text-align: center;
                     color:#fff;
                     line-height: .8em;
-                    font-size: 15vw;
+                    font-size: 8vw;
                     font-family: Trojan Pro;
                 }
                 & h2:first-letter{
@@ -748,11 +757,10 @@
         }
     }
     footer{
-        text-align: center;
         & .container{
             & .row{
                 & .col-xs-12{
-                    text-align: center;
+                   
                     & img{
                         width: 50%;
                     }
@@ -934,12 +942,6 @@
         & .container{
             width: 90vw;
             & .row{
-                & .col-xs-12:last-child{
-                    text-align: center;
-                }
-                & .col-xs-12:first-child{
-                    text-align: center;
-                }
                 & .col-md-3{
                     & .social{
                         width: 100%;
@@ -952,3 +954,27 @@
         }
     }
 }
+
+@media screen and (max-height:414px) {
+    .slick-dots{
+        display: none !important;
+    }
+}
+
+@media screen and (max-width:768px) {
+    #followUs{
+        text-align: center;
+    }
+}
+
+@media screen and (max-height:272px) {
+    
+    #welcome .col-md-6 #welcometext {
+        bottom: 2vh !important;
+        h2{
+            font-size: 8vw !important;
+        }
+    }
+}
+
+

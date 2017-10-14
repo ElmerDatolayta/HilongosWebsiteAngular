@@ -26,14 +26,16 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span> 
-            </button>
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/hos.png">
-            </a>
+            <div class="navbar-header display-flex">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/hos.png">
+                </a>
+                <button type="button" class="navbar-toggle margin-left-auto" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+            </div>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
@@ -63,3 +65,24 @@
     <div class="overlay"></div>
     <div class="bg-image"></div>
 </section>
+
+<script>
+    $(".navbar .container .navbar-header button").click(function(){
+        $(".navbar .container .navbar-header button").addClass("click");
+        $("#mobileview #navmenu").addClass("showmobile");
+    
+    });
+    $("#mobileview #navmenu button").click(function(){
+        $("#mobileview #navmenu").removeClass("showmobile");
+    });
+    
+    function collapsenav(){
+        if ($(".navbar").offset().top > 80){
+            $('.navbar').addClass("scroll-change");
+        }else{
+            $('.navbar').removeClass("scroll-change");
+        }
+    };
+    $(window).scroll(collapsenav);
+    $(document).ready(collapsenav);
+</script>
