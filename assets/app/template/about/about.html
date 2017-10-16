@@ -35,19 +35,16 @@
             <div id="aboutTabsXs">
                 <img src="assets/images/hilongos-logo.png" height="80px" width="80px" style="z-index:1">
                 <div class="drop">
-                    <div class="option active placeholder" data-value="placeholder" data-ng-model="about.tabs">
-                        Choose wisely
-                    </div>
-                    <div class="option" data-value="1" data-ng-model="about.tabs">
+                    <div class="option" data-ng-class="{'active' : about.tabs===1}" data-value="1" data-ng-model="about.tabs">
                         Hilongos Profile
                     </div>
-                    <div class="option" data-value="2" data-ng-model="about.tabs">
+                    <div class="option" data-ng-class="{'active' : about.tabs===2}" data-value="2" data-ng-model="about.tabs">
                         Demographics
                     </div>
-                    <div class="option" data-value="3" data-ng-model="about.tabs">
+                    <div class="option" data-ng-class="{'active' : about.tabs===3}" data-value="3" data-ng-model="about.tabs">
                         History
                     </div>
-                    <div class="option" data-value="4" data-ng-model="about.tabs">
+                    <div class="option" data-ng-class="{'active' : about.tabs===4}" data-value="4" data-ng-model="about.tabs">
                         Transport / Health
                     </div>
                 </div>

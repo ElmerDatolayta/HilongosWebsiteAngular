@@ -62,7 +62,12 @@ app.controller('aboutController',[
             if (val !== "placeholder" || prevActive === "placeholder") {
               $(".drop .option").removeClass("active");
               $(this).addClass("active");
+              if(Number(val)>0){
+                $scope.about.tabs = Number(val);
+                $scope.$apply();
+              }
             };
+
         });
           
         function triggerAnimation() {
