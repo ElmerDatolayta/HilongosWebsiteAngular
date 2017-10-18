@@ -1,0 +1,39 @@
+#profileTab{
+    & #profile{
+        background-color: #bfc4ca;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding-bottom: 25%;
+        background-position: -10% 100%;
+        & .container{
+            background-color: transparent;
+            & .row{
+                background-color: transparent;
+                & .col-md-12{
+                    background-color: transparent;
+                    padding:2vh;
+                    & #profile-header{
+                        margin-bottom: 4vh;
+                        & img{
+                            width: 12vh;
+                            height: 12vh;
+                            display: inline-block;
+                        }
+                        & h3{
+                            display: inline-block;
+                            font-size: 4vh;
+                            margin-bottom: 0;
+                            position: relative;
+                            top:30px;
+                            color:#374254;
+                        }
+                    }
+                    & p{
+                        text-indent: 10vh;
+                    }
+                    
+                }
+            }
+        }
+    }
+}
