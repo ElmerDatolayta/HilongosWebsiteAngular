@@ -37,3 +37,41 @@
         }
     }
 }
+#demographicsTab{
+    & .container-fluid{
+        & img{
+            width: 12vh;
+            height: 12vh;
+            display: inline-block;
+        }
+        & h3{
+            display: inline-block;
+            font-size: 4vh;
+            margin-bottom: 0;
+            position: relative;
+            color:#374254;
+        }
+        & .yellow-heading{
+            background-color:#fbbd00;
+        }
+        & .yearly-demographics{
+            border-bottom:2px solid #9b9b9b;
+            padding-bottom: 3vh;
+            & .col-md-10{
+                & h3{
+                    padding-bottom:3vh;
+                }
+            }
+            & .demographicDetails{
+                & .row{
+                    & .col-md-3{
+                        & p{
+                           padding-left: 3vh;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
