@@ -35,7 +35,7 @@ app.config([
             url: '/about',
             controller : 'aboutController',
             templateUrl: 'assets/app/template/about/about.html'
-		})
+        })
 		.state('investor', {
             url: '/investor',
             controller : 'investorController',

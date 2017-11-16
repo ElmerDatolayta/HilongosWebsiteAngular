@@ -38,21 +38,56 @@
     }
 }
 #demographicsTab{
-    & .container-fluid{
-        & img{
-            width: 12vh;
-            height: 12vh;
-            display: inline-block;
-        }
-        & h3{
-            display: inline-block;
-            font-size: 4vh;
-            margin-bottom: 0;
-            position: relative;
-            color:#374254;
+    & .container{
+        & .row{
+            & .col-md-9{
+                & img{
+                    width: 12vh;
+                    height: 12vh;
+                    display: inline-block;
+                }
+                & h3{
+                    display: inline-block;
+                    font-size: 4vh;
+                    margin-bottom: 0;
+                    position: relative;
+                    color:#374254;
+                }
+            }
+            & .col-md-3{
+                & section{
+                    padding:20px 0;
+                    & .form-group{
+                        position: relative;
+                        margin-bottom: 0;
+                        & input{
+                            border-radius: 0;
+        
+                        }
+                        & span{
+                            position: absolute;
+                            top:50%;
+                            right: 10px;
+        
+                            transform: translate(0,-50%);
+                        }
+                    }
+                }
+            }
         }
         & .yellow-heading{
+            padding: 6px 12px;
             background-color:#fbbd00;
+            position: relative;
+            & h4:nth-child(2){
+                position: absolute;
+                right: 12px;
+                top:50%;
+
+                transform: translate(0,-50%);
+                margin:0;
+            }
+            
         }
         & .yearly-demographics{
             border-bottom:2px solid #9b9b9b;
@@ -64,9 +99,17 @@
             }
             & .demographicDetails{
                 & .row{
-                    & .col-md-3{
-                        & p{
-                           padding-left: 3vh;
+                    & .col-md-6{
+                        & table tbody{
+                            & tr{
+                                & td{
+                                    border:none;
+                                    padding:6px 0;
+                                }
+                                & td:nth-child(2){
+                                    padding-right: 10%;
+                                }
+                            }
                         }
                     }
                     
