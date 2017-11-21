@@ -111,7 +111,9 @@
 }
 
 #departmentSection{
-
+    color:#374254;
+    width: 100%;
+    height: auto;
     .departmentLabel{
         background-color: #374254;
         height: 100px;
@@ -124,55 +126,121 @@
             margin-top: -5px;
             display: inline-block;
         } 
-        #budgetTitle{
+        .budgetTitle{
             color: white;
             display: inline-block;
+            font-size:2.5vw;
         }
     }
-    .padding-5-percent{
-        padding: 0 5%;
-    }
-
-        #deptProfile{
-            width: 300px;
+    .departmentContent{
+        padding: 0 7.5%;
+        .deptPersonInfo{
+            .deptProfile{
+                width: 100%;
+                height:28vw;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image: url("../images/department/departmentSection/budgetProfile.jpg");
+            }
+            .deptName{
+                font-weight: bold;
+                font-size: 3vw;
+            }
+            .deptDesignation{
+                font-size:2.5vw;
+            }
+            .phoneNumber{
+                font-size: 2.5vw;
+                font-weight: bold;
+            }
+            .iconPhone{
+                width: 50px;
+            }
+            .dept-details{
+                margin-top: 100px;
+                // // margin-left: 50px;
+                // padding-left: 5%;
+                .deptContact{
+                    font-weight: bold;
+                    font-size:2.5vw;
+                }
+                .email{
+                    font-size:2.5vw;
+                }
+                .fax{
+                    font-size: 2.5vw;
+                }
+            }
         }
-        #deptName{
-            font-weight: bold;
-            margin-left: 50px;
-            text-transform: uppercase;
-        }
-        #deptDesignation{
-            margin-left: 50px;
-            // margin-top: -5px;
-        }
-        .phoneNumber{
-            font-size: 30px;
-            font-weight: bold;
-        }
-        #iconPhone{
-            width: 50px;
-        }
-        .dept-details{
+        .textCaption{
             margin-top: 100px;
-            // margin-left: 50px;
-            padding-left: 5%;
-        }
-        #deptContact{
-            font-weight: bold;
-        }
-        .text-caption{
-            margin-top: 50px;
-            text-align: justify;
-            text-indent: 50px;
-            font-size: 20px;
+            .text{
+                p{
+                    font-size:2.3em;
+                    text-align: justify;
+                    text-indent: 2em;
+                    margin-bottom: 50px;
+                }
+            }
         }
         .contact-text{
-            font-size: 25px;
-            text-align: center;
+            .contact-title{
+                text-align: left;
+                font-size:2.5vw;
+                font-weight: bold;
+                margin-bottom: 50px;
+            }
+            .contactInfos{
+                .contactDetails{
+                    h2{
+                        margin:5px 0;
+                    }
+                }
+                .contactDetails:first-child{
+                    h2{
+                        text-align: left;
+                    }
+                }
+                .contactDetails:nth-child(2){
+                    h2{
+
+                    }
+                }
+                .contactDetails:nth-child(3){
+                    h2{
+                        text-align: right;
+                    }
+                }
+            }
         }
-        .contact-title{
-            text-align: left;
+        .gallery{
+            margin-top: 70px;
+            .slick-current + .slick-active{
+                opacity: 0.1;
+            }
+            .officePic{
+                width: 100%;
+                height: 24vw;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            .officePic1{
+                background-image: url("/assets/images/department/departmentSection/1.jpg");
+            }
+            .officePic2{
+                background-image: url("/assets/images/department/departmentSection/2.jpg");
+            }
+            .officePic3{
+                background-image: url("/assets/images/department/departmentSection/3.jpg");
+            }
+            .officePic4{
+                background-image: url("/assets/images/department/departmentSection/2.jpg");
+            }
+            .officePic5{
+                background-image: url("/assets/images/department/departmentSection/3.jpg");
+            }
         }
-    }
+    }  
+}
     
 
