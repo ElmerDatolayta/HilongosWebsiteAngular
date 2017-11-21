@@ -18,6 +18,7 @@ app.controller('barangayController',[
         $scope.barangay = {};
 
         $scope.barangay.barangayId = $stateParams.barangayId || 'main';
+        $scope.barangay.partialSource = '/assets/app/template/barangay/partials/' + $scope.barangay.barangayId + '.html';
 
         getBarangayData();
 
@@ -83,43 +84,5 @@ app.controller('barangayController',[
                 return temp === $scope.barangay.barangayId;
             })[0].name;
         };
-
-
-    
-        //Slick JS codes by Darwin Maturan
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-          });
-          $('.slider-nav').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: true,
-            centerMode: true,
-            focusOnSelect: true
-          });
-        
-          $('.autoplay').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-          });
-        
-          $('.multiple-items').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 3
-          });
-          $(".generalInformation .container .col-12 a").click(function(e){
-                e.preventDefault();
-                var id=$(this).attr('href');
-                $('.collapse').collapse('hide');
-                $(id).collapse('show');
-          });
     }
 ]);
