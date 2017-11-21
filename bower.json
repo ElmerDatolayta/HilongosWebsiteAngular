@@ -26,7 +26,8 @@
     "angular-ui-router": "^1.0.6",
     "angular-ui-bootstrap": "^2.5.0",
     "angucomplete-alt": "^3.0.0",
-    "angular-bootstrap": "^2.5.0"
+    "angular-bootstrap": "^2.5.0",
+    "jquery-ui": "^1.12.1"
   },
   "overrides": {
     "bootstrap": {
@@ -48,6 +49,14 @@
         "slick/fonts/*",
         "slick/*.min.js",
         "slick/*"
+      ]
+    },
+    "jquery-ui": {
+      "main": [
+        "jquery-ui.min.js",
+        "jquery-ui.js",
+        "themes/*/*.*",
+        "themes/*/*/*.*"
       ]
     }
   }

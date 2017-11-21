@@ -30,12 +30,16 @@ app.config([
             url: '/event',
             controller : 'eventController',
             templateUrl: 'assets/app/template/event/event.html'
+        })
+        .state('governance', {
+            url: '/governance',
+            templateUrl: 'assets/app/template/governance/governance.html'
 		})
 		.state('about', {
             url: '/about',
             controller : 'aboutController',
             templateUrl: 'assets/app/template/about/about.html'
-		})
+        })
 		.state('investor', {
             url: '/investor',
             controller : 'investorController',
