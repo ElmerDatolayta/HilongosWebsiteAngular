@@ -41,6 +41,9 @@
     .label-height{
         height: 7.5vw;
     }
+    .labelMDRRM{
+        height:3vw !important;
+    }
     .labelFontSize{
         font-size:1.5vw;
     }
@@ -145,12 +148,51 @@
                 background-repeat: no-repeat;
                 background-position: center;
             }
-            .deptBudgetOfficer{
+            .deptOfficer1{
                 background-image: url("../images/department/departmentSection/budgetProfile.jpg");
+            }
+
+            .deptOfficer2
+            {
+                background-image: url("../images/department/departmentSection/planningAndDevelopmentOfficer.jpg");
+            }
+            .deptOfficer3{
+                background-image: url("../images/department/departmentSection/accountant.jpg");
+            }
+            .deptOfficer4{
+                background-image: url("../images/department/departmentSection/civilRegistrar.jpg");
+            }
+            .deptOfficer5{
+                background-image: url("../images/department/departmentSection/assessor.jpg");
+            }
+            .deptOfficer6{
+                background-image: url("../images/department/departmentSection/socialWelfareAndDevelopmentOfficer.jpg");
+            }
+            .deptOfficer7{
+                background-image: url("../images/department/departmentSection/agriculturist.jpg");
+            }
+            .deptOfficer8{
+                background-image: url("../images/department/departmentSection/treasurer.jpg");
+            }
+            .deptOfficer9{
+                background-image: url("../images/department/departmentSection/secretary.jpeg");
+            }
+            .deptOfficer10{
+                background-image: url("../images/department/departmentSection/healthOfficer.jpeg");
+            }
+            .deptOfficer11{
+                background-image: url("../images/department/departmentSection/engineer.jpeg");
+            }
+            .deptOfficer12{
+                background-image: url("../images/department/departmentSection/admin.jpeg");
+            }
+            .deptOfficer13{
+                background-image: url("../images/department/departmentSection/mdrrm.jpg");
             }
             .deptName{
                 font-weight: bold;
                 font-size: 3vw;
+                text-transform: uppercase;
             }
             .deptDesignation{
                 font-size:2.5vw;
