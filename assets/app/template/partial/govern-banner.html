@@ -1,0 +1,100 @@
+<div id = "mobileview">
+    <div class="overlay"></div>
+    <div id="navmenu">
+        <button><span class="fa fa-remove"></span></button>
+        <img src="assets/images/hos.png">
+        <li class="nav-item">
+            <a class="nav-link active cursor-pointer" ui-sref="home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer" ui-sref="about">About</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer" ui-sref="department">Departments</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer" ui-sref="tourist">Tourism</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer" ui-sref="investor">Investors</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer" ui-sref="">Education</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer" ui-sref="">Utilities</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link cursor-pointer" ui-sref="contacts">Contacts</a>
+        </li>
+    </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <div class="navbar-header display-flex">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/images/hos.png">
+                </a>
+                <button type="button" class="navbar-toggle margin-left-auto" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span> 
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link active cursor-pointer" ui-sref="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" ui-sref="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" ui-sref="department">Departments</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" ui-sref="tourist">Tourists</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" ui-sref="investor">Investors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" ui-sref="">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" ui-sref="">Utilities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cursor-pointer" ui-sref="contacts">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="eventBanner" class="half-banner">
+    <div class="overlay"></div>
+    <div class="govern-banner"></div>
+</section>
+
+<script>
+    $(".navbar .container .navbar-header button").click(function(){
+        $(".navbar .container .navbar-header button").addClass("click");
+        $("#mobileview #navmenu").addClass("showmobile");
+    
+    });
+    $("#mobileview #navmenu button").click(function(){
+        $("#mobileview #navmenu").removeClass("showmobile");
+    });
+    
+    function collapsenav(){
+        if ($(".navbar").offset().top > 80){
+            $('.navbar').addClass("scroll-change");
+        }else{
+            $('.navbar').removeClass("scroll-change");
+        }
+    };
+    $(window).scroll(collapsenav);
+    $(document).ready(collapsenav);
+</script>
