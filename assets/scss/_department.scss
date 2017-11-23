@@ -39,7 +39,13 @@
         color: #374254;
     }
     .label-height{
-        height: 70px;
+        height: 7.5vw;
+    }
+    .labelMDRRM{
+        height:3vw !important;
+    }
+    .labelFontSize{
+        font-size:1.5vw;
     }
 }
 
@@ -140,17 +146,59 @@
                 height:28vw;
                 background-size: cover;
                 background-repeat: no-repeat;
+                background-position: center;
+            }
+            .deptOfficer1{
                 background-image: url("../images/department/departmentSection/budgetProfile.jpg");
+            }
+
+            .deptOfficer2
+            {
+                background-image: url("../images/department/departmentSection/planningAndDevelopmentOfficer.jpg");
+            }
+            .deptOfficer3{
+                background-image: url("../images/department/departmentSection/accountant.jpg");
+            }
+            .deptOfficer4{
+                background-image: url("../images/department/departmentSection/civilRegistrar.jpg");
+            }
+            .deptOfficer5{
+                background-image: url("../images/department/departmentSection/assessor.jpg");
+            }
+            .deptOfficer6{
+                background-image: url("../images/department/departmentSection/socialWelfareAndDevelopmentOfficer.jpg");
+            }
+            .deptOfficer7{
+                background-image: url("../images/department/departmentSection/agriculturist.jpg");
+            }
+            .deptOfficer8{
+                background-image: url("../images/department/departmentSection/treasurer.jpg");
+            }
+            .deptOfficer9{
+                background-image: url("../images/department/departmentSection/secretary.jpeg");
+            }
+            .deptOfficer10{
+                background-image: url("../images/department/departmentSection/healthOfficer.jpeg");
+            }
+            .deptOfficer11{
+                background-image: url("../images/department/departmentSection/engineer.jpeg");
+            }
+            .deptOfficer12{
+                background-image: url("../images/department/departmentSection/admin.jpeg");
+            }
+            .deptOfficer13{
+                background-image: url("../images/department/departmentSection/mdrrm.jpg");
             }
             .deptName{
                 font-weight: bold;
                 font-size: 3vw;
+                text-transform: uppercase;
             }
             .deptDesignation{
                 font-size:2.5vw;
             }
             .phoneNumber{
-                font-size: 2.5vw;
+                font-size: 2vw;
                 font-weight: bold;
             }
             .iconPhone{
@@ -176,7 +224,7 @@
             margin-top: 100px;
             .text{
                 p{
-                    font-size:2.3em;
+                    font-size:1.5em;
                     text-align: justify;
                     text-indent: 2em;
                     margin-bottom: 50px;
@@ -194,6 +242,7 @@
                 .contactDetails{
                     h2{
                         margin:5px 0;
+                        font-size:2vw;
                     }
                 }
                 .contactDetails:first-child{
@@ -214,31 +263,55 @@
             }
         }
         .gallery{
-            margin-top: 70px;
+            margin: 70px 0;
             .slick-current + .slick-active{
-                opacity: 0.1;
+                .officeGallery{
+                    padding-top: 1%;
+                    transition: padding 0.5s;
+                    .officePic{
+                        width: 100%;
+                        height: 22vw;
+                        transition: width 1s;
+                        transition: height 1s;
+                    }
+                }
             }
-            .officePic{
-                width: 100%;
-                height: 24vw;
-                background-size: cover;
-                background-repeat: no-repeat;
+            .officeGallery{
+                padding-top: 5%;
+                transition: padding 0.5s;
+                .officePic{
+                    margin: 0 auto;
+                    width: 80%;
+                    height: 20vw;
+                    transition: width 0.5s;
+                    transition: height 0.5s;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                .officePic1{
+                    background-image: url("/assets/images/department/departmentSection/1.jpg");
+                }
+                .officePic2{
+                    background-image: url("/assets/images/department/departmentSection/2.jpg");
+                }
+                .officePic3{
+                    background-image: url("/assets/images/department/departmentSection/3.jpg");
+                }
+                .officePic4{
+                    background-image: url("/assets/images/department/departmentSection/2.jpg");
+                }
+                .officePic5{
+                    background-image: url("/assets/images/department/departmentSection/3.jpg");
+                }
+                p{
+                    margin: 0 auto;
+                    width: 80%;
+                    font-size: 1.5em;
+                    text-align: center;
+                }
             }
-            .officePic1{
-                background-image: url("/assets/images/department/departmentSection/1.jpg");
-            }
-            .officePic2{
-                background-image: url("/assets/images/department/departmentSection/2.jpg");
-            }
-            .officePic3{
-                background-image: url("/assets/images/department/departmentSection/3.jpg");
-            }
-            .officePic4{
-                background-image: url("/assets/images/department/departmentSection/2.jpg");
-            }
-            .officePic5{
-                background-image: url("/assets/images/department/departmentSection/3.jpg");
-            }
+            
         }
     }  
 }
