@@ -61,6 +61,10 @@ app.config([
         .state('education', {
             url: '/education',
             templateUrl: 'assets/app/template/education/education.html'
+        })
+        .state('contacts', {
+            url: '/contact',
+            templateUrl: 'assets/app/template/contact/contact.html'
         });
 
 	    $qProvider.errorOnUnhandledRejections(false);
