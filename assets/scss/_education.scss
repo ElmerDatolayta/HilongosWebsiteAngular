@@ -1,0 +1,84 @@
+#educationPage{
+    width: 100%;
+    .pageLabel{
+        background-color: #374254;
+        h1{
+            align-items: center;
+            color: white;
+            padding: 10px 5%;
+        }
+    }
+    .educationContent{
+        padding:2% 5% 5px;
+        .divLabel{
+            background-color: #61B873;
+            width: 100%;
+            h3{
+                margin-left: 2vw;
+            }
+        }
+        .schoolList{
+            margin-bottom: 50px;
+            .schools{
+                height: auto;
+                .schoolContent1{
+                    background-color: white;
+                }
+                .schoolContent{
+                    width: 100%;
+                    padding: 2% 2%;
+                    .logo{
+                        margin-top: 2vw;
+                        .schoolLogo{
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 12vw;
+                            height: 12vw;
+                        }
+                        .primarySchoolLogo1{
+                            background-image: url("/assets/images/education/hscs.png")
+                        }
+                        .secondarySchoolLogo1{
+                            background-image: url("/assets/images/education/hnvs.png") 
+                        }
+                        .secondarySchoolLogo2{
+                            background-image: url("/assets/images/education/mlg.png") 
+                        }
+                    }
+                    
+                    .schoolName{
+                        font-weight: bold;
+                        font-size: 2vw;
+                    }
+                    .schoolInfo{
+                        font-size: 1.6vw;
+                        margin-bottom: 0;
+                    }
+                    .schoolInfo1{
+                        display: inline;
+                        font-weight: bold;
+                    }
+                    .schoolInfo2{
+                        display: inline-block;
+                    }
+                }
+            }
+            .viewMoreLink{
+                display: flex;
+                justify-content: center;
+                color: black;
+                text-decoration: none;
+                .viewMore{
+                    background-color: #F9C939;
+                    height: 1.7em;
+                    width: 200px;
+                    border: none;
+                    font-size: 1.5em;
+                    margin: 0 auto;
+                }
+            }
+        }
+        
+    }
+}

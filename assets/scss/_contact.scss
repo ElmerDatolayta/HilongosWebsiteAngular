@@ -1,0 +1,157 @@
+#contactsPage{
+    .pageLabel{
+        background-color: #374254;
+        h1{
+            align-items: center;
+            color: white;
+            padding: 10px 5%;
+        }
+    }
+    .contactsContent{
+        padding:2% 5% 5px;
+        .contactList{
+            margin-bottom: 20px;
+            .divLabel{
+                background-color: #61B873;
+                h3{
+                    margin-left: 2vw;
+                }
+            }
+            .contactDirectory{
+                height: auto;
+                .contactItemsNoBorderBottom{
+                    border-bottom: none !important;
+                }
+                .contactItemsNoBorderRight{
+                    border-right: none !important;
+                }
+                .contactItems{
+                    height: 31vw;
+                    // padding-bottom: 30px;
+                    border-right: 1px solid #828892;
+                    border-bottom: 1px solid #828892;
+                    .contactIcon{
+                        margin-top: 2vw;
+                        margin-bottom: 2vw;
+                        display: flex;
+                        justify-content: center;
+                        .contactLogo{
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            width: 12vw;
+                            height: 12vw;
+                        }
+                        .contactLogo1{
+                            height:7vw !important;
+                            width: 85% !important;
+                            margin-top: 2.5vw;
+                            margin-bottom: 2.5vw;
+                        }
+                        .contactLogo2{
+                            width: 20vw !important;
+                            height: 20vw !important;
+                        }
+                        .contactLogo3{
+                            width:40%;
+                        }
+                        .contactLogo4{
+                            width:50%;
+                        }
+                        .contactDirLogo1{
+                            background-image: url("/assets/images/contacts/admin.png");
+                        }
+                        .contactDirLogo2{
+                            background-image: url("/assets/images/contacts/ssd.png") ;
+                        }
+                        .contactDirLogo3{
+                            background-image: url("/assets/images/contacts/city_libary.png") ;
+                        }
+                        .contactDirLogo4{
+                            background-image: url("/assets/images/contacts/pal.png");
+                        }
+                        .contactDirLogo5{
+                            background-image: url("/assets/images/contacts/pio.png") ;
+                        }
+                        .contactDirLogo6{
+                            background-image: url("/assets/images/contacts/paos.png") ;
+                        }
+                        .contactDirLogo7{
+                            background-image: url("/assets/images/contacts/municipal_health_office.png") ;
+                        }
+                        .contactDirLogo8{
+                            background-image: url("/assets/images/contacts/office_mayor.png"); 
+                        }
+                        .contactDirLogo9{
+                            background-image: url("/assets/images/contacts/national_emergency.png");
+                        }
+                        .contactDirLogo10{
+                            background-image: url("/assets/images/contacts/ndrmmc.png"); 
+                        }
+                        .contactDirLogo11{
+                            background-image: url("/assets/images/contacts/dswd.png"); 
+                        }
+                        .contactDirLogo12{
+                            background-image: url("/assets/images/contacts/red_cross.png");
+                        }
+                        .contactDirLogo13{
+                            background-image: url("/assets/images/contacts/dilg.png") ;
+                        }
+                        .contactDirLogo14{
+                            background-image: url("/assets/images/contacts/pnp.png") ;
+                        }
+                        .contactDirLogo15{
+                            background-image: url("/assets/images/contacts/bfp.png") ;
+                        }
+                        .contactDirLogo16{
+                            background-image: url("/assets/images/contacts/pcg.png") ;
+                        }
+                        .contactDirLogo17{
+                            background-image: url("/assets/images/contacts/lto.png");
+                        }
+                        .contactDirLogo18{
+                            background-image: url("/assets/images/contacts/pcg.png"); 
+                        }
+                        .contactDirLogo19{
+                            background-image: url("/assets/images/contacts/dep_transportation.png");
+                        }
+                        .contactDirLogo20{
+                            background-image: url("/assets/images/contacts/iconlang.png"); 
+                        }
+                    }
+                    .contactName{
+                        text-align: center;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        height: 3.3vw;
+                        font-size: 1.2vw;
+                    }
+                    .contactDescription{
+                        display:block;
+                        display:-webkit-box;
+                        text-align: center;
+                        max-width: 80%;
+                        margin: auto;
+                        line-height: 1.4;
+                        font-size: 15px;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                        margin-bottom: 20px;
+                        height: 15px*1.4*3;
+                        color:#828892;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .contactNumber{
+                        text-align: center;
+                        width: 80%;
+                        margin: auto;
+                        font-weight: bold;
+                        font-size: 1.5vw;
+                    }
+                }
+            }
+        }
+        
+    }
+}
