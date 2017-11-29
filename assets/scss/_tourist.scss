@@ -1,3 +1,118 @@
 #touristPage{
+    margin:6vh 0;
+}
+.image-sub{
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+}
+
+.image-main{
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.image-description{
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-color: #0c8d71;
+    padding:5vh 7vh;
+}
+.image-description .first-content{
+    width: 100%;
+    height: 100%;
+    border:1px solid #fff;
+    padding:4vh 0;
+}
+.image-description .first-content .second-content{
+    position: relative;
+    margin-left: -5%;
+    width: 110%;
+    height: 100%;
+    border:1px solid #fff;
+    text-align: center;
+}
+.image-description .first-content .second-content .inner-description{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    width: 100%;
     
+    transform: translate(-50%,-50%);
+}
+.image-description .first-content .second-content .inner-description .decription-text{
+    color:#fff;
+    margin-top: 10px;
+}
+.image-description .first-content .second-content .inner-description .btn-view-more{
+    padding:10px 25px;
+    border:2px solid #fff;
+    text-decoration: none;
+    background-color: transparent;
+    border-radius: 0;
+    font-size: 1.3em;
+    color:#fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#productSection{
+    position: relative;
+}
+
+.description-box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    display: none;
+}
+.swirl{
+    width: 10%;
+    display: none;
+}
+.image-description .first-content .second-content .inner-description .btn-view-more:hover{
+    background-color: #fff;
+    color: #000;
+    
+}
+
+
+.arrow-left {
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent; 
+    border-right:30px solid #0c8d71; 
+    position: absolute;
+    left: -30px;
+    z-index: 5;
+}
+.arrow-right {
+    width: 0; 
+    height: 0; 
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    border-left: 30px solid #0c8d71;
+    position: absolute;
+    right: -30px;
+    z-index: 5;
+}
+
+@media (max-width:450px){
+    .image-description .first-content{
+        padding:2vh 0;
+    }
+    .image-description .first-content .second-content{
+        margin-left: -5%;
+        width: 110%;
+    }
+    .image-description{
+        padding:2vh 3vh;
+    }
 }
