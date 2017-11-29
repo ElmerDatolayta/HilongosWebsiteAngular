@@ -37,84 +37,166 @@
         }
     }
 }
-#demographicsTab{
-    & .container{
-        & .row{
-            & .col-md-9{
-                & img{
-                    width: 12vh;
-                    height: 12vh;
-                    display: inline-block;
-                }
-                & h3{
-                    display: inline-block;
-                    font-size: 4vh;
-                    margin-bottom: 0;
-                    position: relative;
-                    color:#374254;
-                }
-            }
-            & .col-md-3{
-                & section{
-                    padding:20px 0;
-                    & .form-group{
-                        position: relative;
-                        margin-bottom: 0;
-                        & input{
-                            border-radius: 0;
+// #demographicsTab{
+    // & .container{
+    //     & .row{
+    //         & .col-md-9{
+    //             & img{
+    //                 width: 12vh;
+    //                 height: 12vh;
+    //                 display: inline-block;
+    //             }
+    //             & h3{
+    //                 display: inline-block;
+    //                 font-size: 4vh;
+    //                 margin-bottom: 0;
+    //                 position: relative;
+    //                 color:#374254;
+    //             }
+    //         }
+    //         & .col-md-3{
+    //             & section{
+    //                 padding:20px 0;
+    //                 & .form-group{
+    //                     position: relative;
+    //                     margin-bottom: 0;
+    //                     & input{
+    //                         border-radius: 0;
         
-                        }
-                        & span{
-                            position: absolute;
-                            top:50%;
-                            right: 10px;
+    //                     }
+    //                     & span{
+    //                         position: absolute;
+    //                         top:50%;
+    //                         right: 10px;
         
-                            transform: translate(0,-50%);
-                        }
-                    }
-                }
-            }
-        }
-        & .yellow-heading{
-            padding: 6px 12px;
-            background-color:#fbbd00;
-            position: relative;
-            & h4:nth-child(2){
-                position: absolute;
-                right: 12px;
-                top:50%;
+    //                         transform: translate(0,-50%);
+    //                     }
+    //                 }
+    //             }
+    //         }
+    //     }
+    //     & .yellow-heading{
+    //         padding: 6px 12px;
+    //         background-color:#fbbd00;
+    //         position: relative;
+    //         & h4:nth-child(2){
+    //             position: absolute;
+    //             right: 12px;
+    //             top:50%;
 
-                transform: translate(0,-50%);
-                margin:0;
-            }
+    //             transform: translate(0,-50%);
+    //             margin:0;
+    //         }
             
-        }
-        & .yearly-demographics{
-            border-bottom:2px solid #9b9b9b;
-            padding-bottom: 3vh;
-            & .col-md-10{
-                & h3{
-                    padding-bottom:3vh;
+    //     }
+    //     & .yearly-demographics{
+    //         border-bottom:2px solid #9b9b9b;
+    //         padding-bottom: 3vh;
+    //         & .col-md-10{
+    //             & h3{
+    //                 padding-bottom:3vh;
+    //             }
+    //         }
+    //         & .demographicDetails{
+    //             & .row{
+    //                 & .col-md-6{
+    //                     & table tbody{
+    //                         & tr{
+    //                             & td{
+    //                                 border:none;
+    //                                 padding:6px 0;
+    //                             }
+    //                             & td:nth-child(2){
+    //                                 padding-right: 10%;
+    //                             }
+    //                         }
+    //                     }
+    //                 }
+                    
+    //             }
+    //         }
+    //     }
+    // }
+
+// }
+
+#demographicsTab{
+    padding: 70px 5vw;
+    background-color: #6E7681 transparent;
+    background-image:url("/assets/images/economic_social/socialBackground.jpg");
+    background-position: bottom;
+    background-size: cover;
+    .accordionContents{
+        .accordionPanel{
+            .divLabel{
+                background-color: #61B873;
+                margin-bottom: 5px;
+                // padding: 2vw 1vw;
+                .icon{
+                    width: 4vw;
+                    height: 4vw;
+                    margin: auto 0;
+        
+                    position: relative;
+                    background: #FDC100;
+                    border: 10px solid #FDC100;
+                }
+                h3{
+                   margin-left: 3vw;
+                   vertical-align: middle;
+                    display: inline;
+                    text-transform: uppercase;
+                    color: #3A4956;
                 }
             }
-            & .demographicDetails{
-                & .row{
-                    & .col-md-6{
-                        & table tbody{
-                            & tr{
-                                & td{
-                                    border:none;
-                                    padding:6px 0;
-                                }
-                                & td:nth-child(2){
-                                    padding-right: 10%;
-                                }
-                            }
+            .contents{
+                padding: 1vw 4vw;
+                background-color: #6E7681;
+                height:auto;
+                font-family: sans-serif;
+                .tableHeading{
+                    color: white;
+                    text-align: center;
+                    font-size: 1.4vw;
+                    font-weight: bold;
+                }
+                .pContents{
+                    font-size: 1.4vw;
+                    color: white;
+                }
+                table{
+                    width: 100%;
+                    margin-bottom: 20px;
+                    tr{
+                        td{
+                            font-size: 1.3vw;
+                            padding:1.5vw 4vw;
+                            border-right: 2px solid #6E7681;
+                            text-transform: uppercase;
+                        }
+                        .tdCentered{
+                            text-align: center;
+                        }
+
+                        th{
+                            font-size: 1.3vw;
+                            padding:1.5vw 4vw;
+                            border-right: 2px solid #6E7681;
+                            text-transform: uppercase;
+                            text-align: center;
+                            font-weight: bold;
                         }
                     }
-                    
+                    tr:nth-child(odd){
+                        background-color: #B8B8B8;
+                    }
+                    tr:nth-child(even){
+                        background-color: #E5E5E5;
+                    }
                 }
             }
         }
     }
+    
+    
 }
