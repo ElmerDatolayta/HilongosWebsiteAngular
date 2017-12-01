@@ -2,10 +2,10 @@
 
 app.controller('investorController',[
     '$scope',
-    'sharedDateService',
+    'sharedDataService',
     function(
         $scope,
-        sharedDateService
+        sharedDataService
     )
     {
         

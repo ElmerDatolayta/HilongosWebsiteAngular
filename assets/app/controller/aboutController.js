@@ -2,10 +2,10 @@
 
 app.controller('aboutController',[
     '$scope',
-    'sharedDateService',
+    'sharedDataService',
     function(
         $scope,
-        sharedDateService
+        sharedDataService
     )
     {
         $scope.about = {};
@@ -71,18 +71,18 @@ app.controller('aboutController',[
         });
           
         function triggerAnimation() {
-        var finalWidth = $(".drop").hasClass("visible") ? 22 : 20;
-        $(".drop").css("width", "24em");
-        setTimeout(function() {
-            $(".drop").css("width", finalWidth + "em");
-        }, 400);
-        $(document).ready(function(){
-            $("#demographicsTab .container .row .col-md-3 section .form-group input").datepicker();
-        });
-        $("#demographicsTab .container .row .col-md-3 section .form-group span").click(function(){
-            alert('me');
-            // $("#demographicsTab .container .row .col-md-3 section .form-group input").datepicker('show');
-        });
-    }
+            var finalWidth = $(".drop").hasClass("visible") ? 22 : 20;
+            $(".drop").css("width", "24em");
+            setTimeout(function() {
+                $(".drop").css("width", finalWidth + "em");
+            }, 400);
+            $(document).ready(function(){
+                $("#demographicsTab .container .row .col-md-3 section .form-group input").datepicker();
+            });
+            $("#demographicsTab .container .row .col-md-3 section .form-group span").click(function(){
+                alert('me');
+                // $("#demographicsTab .container .row .col-md-3 section .form-group input").datepicker('show');
+            });
+        }
     }
 ]);

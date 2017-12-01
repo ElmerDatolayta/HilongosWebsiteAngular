@@ -33,28 +33,12 @@
                 <h2>{{barangay.getBarangayName()}}</h2>
                 <hr />
                 <br/>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                        industry. Lorem Ipsum has been the industry's standard dummy text 
-                        ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book
-                        Lorem Ipsum is simply dummy text of the printing and typesetting 
-                        industry. Lorem Ipsum has been the industry's standard dummy text 
-                        ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book.</p>
-                        <br/>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                        industry. Lorem Ipsum has been the industry's standard dummy text 
-                        ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book
-                        Lorem Ipsum is simply dummy text of the printing and typesetting 
-                        industry. Lorem Ipsum has been the industry's standard dummy text 
-                        ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book.</p>
+                        <div data-ng-bind-html="barangay.history.content"></div>
                 </div>
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
                 <br />
                 <hr/>
                 </div>
         </section>
-        <ng-include src="barangay.partialSource"></ng-include>
+        <ng-include data-ng-if="barangay.barangayId!=='main'" src="barangay.partialSource"></ng-include>
 </div>

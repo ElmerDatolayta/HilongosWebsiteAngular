@@ -2,10 +2,10 @@
 
 app.controller('eventController',[
     '$scope',
-    'sharedDateService',
+    'sharedDataService',
     function(
         $scope,
-        sharedDateService
+        sharedDataService
     )
     {
         

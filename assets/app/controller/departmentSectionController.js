@@ -2,11 +2,11 @@
 
 app.controller('departmentSectionController',[
     '$scope',
-    'sharedDateService',
+    'sharedDataService',
     '$state',
     function(
         $scope,
-        sharedDateService,
+        sharedDataService,
         $state
     )
     {
