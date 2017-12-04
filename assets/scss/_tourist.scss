@@ -17,42 +17,48 @@
     background-repeat: no-repeat;
 }
 .image-description{
+    background-image: url('../images/tourism/box.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     background-color: #0c8d71;
-    padding:5vh 7vh;
+    padding: 3em 3em;
 }
 .image-description .first-content{
     width: 100%;
     height: 100%;
-    border:1px solid #fff;
-    padding:4vh 0;
+    //border:1px solid #fff;
+    //padding:4vh 0;
 }
 .image-description .first-content .second-content{
     position: relative;
-    margin-left: -5%;
-    width: 110%;
+    //margin-left: -5%;
+    width: 100%;
     height: 100%;
-    border:1px solid #fff;
+    //border:1px solid #fff;
     text-align: center;
 }
 .image-description .first-content .second-content .inner-description{
-    position: absolute;
-    top:50%;
-    left: 50%;
+    //position: absolute;
+    //top:50%;
+   // left: 50%;
     width: 100%;
     
-    transform: translate(-50%,-50%);
+   // transform: translate(-50%,-50%);
+    //padding: 2em 5em;
 }
 .image-description .first-content .second-content .inner-description .decription-text{
     color:#fff;
+    font-weight: bolder;
+    font-size: 1.8em;
     margin-top: 10px;
 }
 .image-description .first-content .second-content .inner-description .btn-view-more{
-    padding:10px 25px;
+    padding:4px 40px;
     border:2px solid #fff;
     text-decoration: none;
     background-color: transparent;
@@ -73,8 +79,9 @@
     display: none;
 }
 .swirl{
-    width: 10%;
-    display: none;
+    width: 100%;
+    height: 40px;
+    //display: none;
 }
 .image-description .first-content .second-content .inner-description .btn-view-more:hover{
     background-color: #fff;
