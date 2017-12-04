@@ -58,5 +58,18 @@ app.controller('homeController',[
             });
            
         });
+
+        $('a.goto-link').click(function(e){
+        // prevent default action
+            e.preventDefault();
+            scrollToElement( $(this).attr('href'), 1000 );
+        });
+    
+        var scrollToElement = function(el, ms){
+            var speed = (ms) ? ms : 600;
+            $('html,body').animate({
+                scrollTop: $(el).offset().top
+            }, speed);
+        };
     }
 ]);
