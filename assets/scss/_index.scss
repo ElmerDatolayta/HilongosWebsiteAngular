@@ -396,6 +396,8 @@ body{
     position: relative;
     height: 100%;
     padding:4% 0;
+    border-top: 10px solid #ffd15d;
+    border-bottom:  10px solid #ffd15d;
     & .overlay{
         position: absolute;
         top:0;
