@@ -124,9 +124,13 @@
     padding: 70px 5vw;
     background-color: #6E7681 transparent;
     background-image:url("/assets/images/economic_social/socialBackground.jpg");
-    background-position: bottom;
+    background-position: top;
     background-size: cover;
+    background-repeat: no-repeat;
     .accordionContents{
+        .sectorName{
+            color: #374254;
+        }
         .accordionPanel{
             .divLabel{
                 background-color: #61B873;
@@ -160,6 +164,9 @@
                     font-size: 1.4vw;
                     font-weight: bold;
                 }
+                .tableHeadingLeft{
+                    text-align: left !important;
+                }
                 .pContents{
                     font-size: 1.4vw;
                     color: white;
@@ -172,7 +179,8 @@
                             font-size: 1.3vw;
                             padding:1.5vw 4vw;
                             border-right: 2px solid #6E7681;
-                            text-transform: uppercase;
+                            // text-transform: uppercase;
+                            // color: #374254;
                         }
                         .tdCentered{
                             text-align: center;
@@ -182,9 +190,10 @@
                             font-size: 1.3vw;
                             padding:1.5vw 4vw;
                             border-right: 2px solid #6E7681;
-                            text-transform: uppercase;
+                            // text-transform: uppercase;
                             text-align: center;
                             font-weight: bold;
+                            // color: #374254;
                         }
                     }
                     tr:nth-child(odd){

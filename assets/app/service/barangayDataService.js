@@ -1,6 +1,6 @@
 'use strict';
 
-app.factory('barangayDataService',function(){
+app.factory('barangayDataService',['$http','$q',function($http,$q){
     var factory = {};
 
     var barangayNames = function(){
@@ -18,7 +18,7 @@ app.factory('barangayDataService',function(){
             {"name":"Campina"},
             {"name":"Cantandog 1"},
             {"name":"Cantandog 2"},
-            {"name":"Central Poblacion"},
+            {"name":"Central Poblacion"},
             {"name":"Concepcion"},
             {"name":"Eastern Poblacion"},
             {"name":"Hampangan"},
@@ -123,8 +123,15 @@ app.factory('barangayDataService',function(){
         ];
     };
 
+    var getBarangayHistory = function(barangayId){
+        return $http.get('assets/json/'+barangayId+'.json').then(function(response){
+            return response;
+        });
+    }
+
     factory.getBarangayNames = barangayNames;
     factory.getBarangaySearchString = barangaySearchStrings;
+    factory.getBarangayHistory = getBarangayHistory;
 
     return factory;
-});
+}]);

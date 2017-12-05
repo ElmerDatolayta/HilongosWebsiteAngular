@@ -115,9 +115,9 @@ gulp.task('angular-js',['clean-angular-js'],function(){
         ]
     )
     .pipe(plumber())
-    .pipe(concat('app.js'))
-    .pipe(rename({suffix: '.min'}))
-    .pipe(uglify())
+    // .pipe(concat('app.js'))
+    // .pipe(rename({suffix: '.min'}))
+    // .pipe(uglify())
     .pipe(gulp.dest('./public/assets/app/'));
 });
 
@@ -129,6 +129,15 @@ gulp.task('angular-controller',['clean-angular-controller'],function(){
         ]
     )
     .pipe(gulp.dest('./public/assets/app/controller'));
+});
+
+gulp.task('barangay-data',function(){
+    return gulp.src(
+        [
+            './assets/json/**/*.json'
+        ]
+    )
+    .pipe(gulp.dest('./public/assets/json'));
 });
 
 gulp.task('angular-template',['clean-angular-template'],function(){
@@ -154,4 +163,4 @@ gulp.task('clean-angular-controller',function(){
 });
 
 
-gulp.task('default',['bower-files','styles','js','angular-js','angular-controller','angular-template','html','image','font','icon','watch']);
+gulp.task('default',['bower-files','styles','js','angular-js','angular-controller','angular-template','barangay-data','html','image','font','icon','watch']);

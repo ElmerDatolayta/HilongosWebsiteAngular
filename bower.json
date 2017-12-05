@@ -27,7 +27,8 @@
     "angular-ui-bootstrap": "^2.5.0",
     "angucomplete-alt": "^3.0.0",
     "angular-bootstrap": "^2.5.0",
-    "jquery-ui": "^1.12.1"
+    "jquery-ui": "^1.12.1",
+    "angular-sanitize": "^1.6.7"
   },
   "overrides": {
     "bootstrap": {
