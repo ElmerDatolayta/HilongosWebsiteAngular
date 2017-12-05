@@ -126,6 +126,7 @@
         // margin-left: -15px;
         // margin-right: -15px;
         margin-bottom: 50px;
+        padding: 0 7vw;
         width: 100%;
         .iconDepartment{
             width: 70px;
@@ -139,7 +140,7 @@
         }
     }
     .departmentContent{
-        padding: 0 7.5%;
+        padding: 0 7vw;
         .deptPersonInfo{
             .deptProfile{
                 width: 100%;
@@ -231,6 +232,29 @@
                 }
             }
         }
+        .function{
+            .functionHeader{
+                font-weight: bold;
+                font-size:2.5vw;
+            }
+            .functionText{
+                font-size: 1.6em;
+                text-align: justify;
+                text-indent: 2em;
+            }
+            .functionUL{
+                .functionList{
+                    font-size: 1.6em;
+                    text-align: justify;
+                    margin-left: 3vw;
+                }
+            }
+        }
+
+        .missionVission{
+            
+        }
+       
         .contact-text{
             .contact-title{
                 text-align: left;
