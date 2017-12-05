@@ -1,6 +1,6 @@
 'use strict';
 
-app.service('sharedDateService',function(){
+app.service('sharedDataService',function(){
     this.state = {
         isHome : false
     }

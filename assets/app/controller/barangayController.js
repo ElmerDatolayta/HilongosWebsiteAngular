@@ -2,13 +2,13 @@
 
 app.controller('barangayController',[
     '$scope',
-    'sharedDateService',
+    'sharedDataService',
     '$stateParams',
     '$state',
     'barangayDataService',
     function(
         $scope,
-        sharedDateService,
+        sharedDataService,
         $stateParams,
         $state,
         barangayDataService
@@ -27,6 +27,7 @@ app.controller('barangayController',[
         $scope.barangay.imageSrc =  imageUrl + $scope.barangay.barangayId + imageExtension;
         $scope.barangay.barangayImageSrc =  'assets/images/barangay_map/' + $scope.barangay.barangayId + '.png';
         $scope.barangay.selected ={};
+        getBarangayHistory($scope.barangay.barangayId);
 
         $scope.barangay.search = function(str) {
             var filtered = [];
@@ -84,5 +85,13 @@ app.controller('barangayController',[
                 return temp === $scope.barangay.barangayId;
             })[0].name;
         };
+
+        function getBarangayHistory(barangayId){
+            if(barangayId!=='' && barangayId!=='main'){
+                barangayDataService.getBarangayHistory(barangayId).then(function(response){
+                    $scope.barangay.history = response.data;
+                });
+            }
+        }
     }
 ]);
