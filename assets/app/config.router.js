@@ -65,6 +65,14 @@ app.config([
         .state('contacts', {
             url: '/contact',
             templateUrl: 'assets/app/template/contact/contact.html'
+        })
+        .state('facilities', {
+            url: '/facilities',
+            templateUrl: 'assets/app/template/unknown/facilities.html'
+        })
+        .state('equipment', {
+            url: '/equipment',
+            templateUrl: 'assets/app/template/unknown/equipment.html'
         });
 
 	    $qProvider.errorOnUnhandledRejections(false);

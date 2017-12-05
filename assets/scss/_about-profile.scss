@@ -37,88 +37,7 @@
         }
     }
 }
-// #demographicsTab{
-    // & .container{
-    //     & .row{
-    //         & .col-md-9{
-    //             & img{
-    //                 width: 12vh;
-    //                 height: 12vh;
-    //                 display: inline-block;
-    //             }
-    //             & h3{
-    //                 display: inline-block;
-    //                 font-size: 4vh;
-    //                 margin-bottom: 0;
-    //                 position: relative;
-    //                 color:#374254;
-    //             }
-    //         }
-    //         & .col-md-3{
-    //             & section{
-    //                 padding:20px 0;
-    //                 & .form-group{
-    //                     position: relative;
-    //                     margin-bottom: 0;
-    //                     & input{
-    //                         border-radius: 0;
-        
-    //                     }
-    //                     & span{
-    //                         position: absolute;
-    //                         top:50%;
-    //                         right: 10px;
-        
-    //                         transform: translate(0,-50%);
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    //     & .yellow-heading{
-    //         padding: 6px 12px;
-    //         background-color:#fbbd00;
-    //         position: relative;
-    //         & h4:nth-child(2){
-    //             position: absolute;
-    //             right: 12px;
-    //             top:50%;
 
-    //             transform: translate(0,-50%);
-    //             margin:0;
-    //         }
-            
-    //     }
-    //     & .yearly-demographics{
-    //         border-bottom:2px solid #9b9b9b;
-    //         padding-bottom: 3vh;
-    //         & .col-md-10{
-    //             & h3{
-    //                 padding-bottom:3vh;
-    //             }
-    //         }
-    //         & .demographicDetails{
-    //             & .row{
-    //                 & .col-md-6{
-    //                     & table tbody{
-    //                         & tr{
-    //                             & td{
-    //                                 border:none;
-    //                                 padding:6px 0;
-    //                             }
-    //                             & td:nth-child(2){
-    //                                 padding-right: 10%;
-    //                             }
-    //                         }
-    //                     }
-    //                 }
-                    
-    //             }
-    //         }
-    //     }
-    // }
-
-// }
 
 #demographicsTab{
     padding: 70px 5vw;
@@ -131,10 +50,19 @@
         .sectorName{
             color: #374254;
         }
+        .sectorName:after{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 25px 0 25px 90px;
+            border-color: transparent transparent transparent #fdc200;
+            z-index: 3;
+        }
         .accordionPanel{
             .divLabel{
                 background-color: #61B873;
                 margin-bottom: 5px;
+                position: relative;
                 // padding: 2vw 1vw;
                 .icon{
                     width: 4vw;
@@ -143,14 +71,40 @@
         
                     position: relative;
                     background: #FDC100;
-                    border: 10px solid #FDC100;
+                    // border: 10px solid #FDC100;
+                    // .iconImg{
+                    //     width: 4vw;
+                    //     height:4vw;
+                    // }
+                }
+                .icon:after, .icon:before{
+                    left: 91%;
+                    top: 60%;
+                    border: solid transparent;
+                    content: " ";
+                    height: 0;
+                    width: 0;
+                    position: absolute;
+                    pointer-events: none;
+                }
+                .icon:after{
+                    border-color: rgba(136, 183, 213, 0);
+                    border-left-color: #FDC100;
+                    border-width: 2vw;
+                    margin-top: -2vw;
+                }
+                .icon:before{
+                    border-color: rgba(194, 225, 245, 0);
+                    border-left-color: #FDC100;
+                    border-width: 2vw;
+                    margin-top: -2vw;
                 }
                 h3{
                    margin-left: 3vw;
                    vertical-align: middle;
                     display: inline;
                     text-transform: uppercase;
-                    color: #3A4956;
+                    color: #374254;
                 }
             }
             .contents{
@@ -205,7 +159,73 @@
                 }
             }
         }
+    }    
+}
+#physicalFeatures{
+    padding: 70px 10vw;
+    background-image:url("/assets/images/economic_social/socialBackground.jpg");
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .info{
+        .areaInfo{
+            font-weight: bold;
+            display: block;
+            margin: 5px 0;
+            text-transform: uppercase;
+        }
+        .areaInfoQ{
+            text-align: center;
+        }
+        .areaInfoA{
+            text-align: left;
+        }
     }
-    
-    
+    .landUse{
+        margin-top: 30px;
+        table{
+            margin-bottom: 50px;
+            tr{
+                font-size: 1.5em;
+                th{
+                    background-color: #61B873;
+                    font-weight: bold;
+                    text-align: center;
+                    border:1px solid black;
+                }
+                th:first-child{
+                    text-align: left !important;
+                }
+                td{
+                    text-align: center;
+                    border:1px solid black;
+                    background-color: #E5E5E5;
+                    ul{
+                        li{
+                            width: 50%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+                td:first-child{
+                    text-align: left !important;
+                }
+            }
+            tr:last-child{
+                td{
+                    font-weight: bold !important;
+                }
+                td:first-child{
+                    text-align: right !important;
+                }
+            }
+        }
+    }
+    .topographyHeading{
+
+    }
+    .topographyDescription{
+        text-indent: 3em;
+        font-size: 2em;
+    }
 }
