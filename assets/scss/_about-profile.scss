@@ -168,7 +168,7 @@
     }    
 }
 #physicalFeatures{
-    padding: 70px 10vw;
+    padding: 70px 20px;
     background-image:url("/assets/images/economic_social/socialBackground.jpg");
     background-position: center;
     background-size: cover;
@@ -176,7 +176,7 @@
     background-attachment: fixed;
     .info{
         .areaInfo{
-            font-weight: bold;
+            // font-weight: bold;
             display: block;
             margin: 5px 0;
             text-transform: uppercase;
@@ -190,10 +190,13 @@
     }
     .landUse{
         margin-top: 30px;
+        h3{
+            font-weight: bold;
+        }
         table{
             margin-bottom: 50px;
             tr{
-                font-size: 1.5em;
+                font-size: 1em;
                 th{
                     background-color: #61B873;
                     font-weight: bold;
@@ -233,6 +236,7 @@
     }
     .topographyDescription{
         text-indent: 3em;
-        font-size: 2em;
+        font-size: 1.2em;
+        text-align: justify;
     }
 }
