@@ -1,3 +1,77 @@
 #equipmentPage{
-    
+    color: white;
+    .pageLabel{
+        background-color: #374254;
+        margin-bottom: 50px;
+        height: 100px;
+        .iconImg{
+            width:60px;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+        h1{
+            color: white;
+            display: inline-block;
+            margin: 30px 0;
+        }
+    }
+    .equipmentContent{
+        .contentBox{
+            margin-bottom: 50px;
+            .contentDescription{
+                background-color: #374254;
+                padding: 10px;
+                transition: color 0.5s, background-color 0.5s;
+                
+                h2{
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+                .arrowRight{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid white;
+                    border-radius: 100%;
+                    margin-left: 10px;
+                }
+            }
+            
+            .contentImg{
+                background-repeat: no-repeat;
+                background-size: cover;
+                // background-position: center;
+                height: 300px;
+                width: 100%;
+            }
+            .contentImg1{
+                background-image: url("/assets/images/equipment/1.jpg");
+            }
+            .contentImg2{
+                background-image: url("/assets/images/equipment/2.jpg");
+            }
+            .contentImg3{
+                background-image: url("/assets/images/equipment/3.jpg");
+            }
+            .contentImg4{
+                background-image: url("/assets/images/equipment/4.jpg");
+            }
+            .contentImg5{
+                background-image: url("/assets/images/equipment/5.jpg");
+            }
+            .contentImg6{
+                background-image: url("/assets/images/equipment/6.jpg");
+            }
+        }
+        .contentBox:hover{
+            .contentDescription{
+                background-color: #FAC738;
+                color:#374254;
+                transition: color 0.5s, background-color 0.5s;
+            }
+        }
+    }
+    @media screen and (min-width: 768px){
+
+    }
 }

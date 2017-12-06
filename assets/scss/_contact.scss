@@ -14,39 +14,39 @@
             .divLabel{
                 background-color: #61B873;
                 h3{
-                    margin-left: 2vw;
+                    margin-left: 20px;
                 }
             }
             .contactDirectory{
                 height: auto;
-                .contactItemsNoBorderBottom{
-                    border-bottom: none !important;
-                }
-                .contactItemsNoBorderRight{
-                    border-right: none !important;
-                }
+                // .contactItemsNoBorderBottom{
+                //     border-bottom: none !important;
+                // }
+                // .contactItemsNoBorderRight{
+                //     border-right: none !important;
+                // }
                 .contactItems{
-                    height: 31vw;
+                    height: 400px;
                     // padding-bottom: 30px;
-                    border-right: 1px solid #828892;
+                    // border-right: 1px solid #828892;
                     border-bottom: 1px solid #828892;
                     .contactIcon{
-                        margin-top: 2vw;
-                        margin-bottom: 2vw;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
                         display: flex;
                         justify-content: center;
                         .contactLogo{
                             background-position: center;
                             background-repeat: no-repeat;
                             background-size: cover;
-                            width: 12vw;
-                            height: 12vw;
+                            width: 150px;
+                            height: 150px;
                         }
                         .contactLogo1{
-                            height:7vw !important;
-                            width: 85% !important;
-                            margin-top: 2.5vw;
-                            margin-bottom: 2.5vw;
+                            height:120px !important;
+                            width: 94% !important;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
                         }
                         .contactLogo2{
                             width: 20vw !important;
@@ -123,8 +123,8 @@
                         text-align: center;
                         font-weight: bold;
                         text-transform: uppercase;
-                        height: 3.3vw;
-                        font-size: 1.2vw;
+                        height: 30px;
+                        font-size: 1.2em;
                     }
                     .contactDescription{
                         display:block;
@@ -147,7 +147,7 @@
                         width: 80%;
                         margin: auto;
                         font-weight: bold;
-                        font-size: 1.5vw;
+                        font-size: 1.4em;
                     }
                 }
             }

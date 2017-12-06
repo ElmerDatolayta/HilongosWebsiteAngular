@@ -1,3 +1,143 @@
 #facilityPage{
-    
+    color: white;
+    .pageLabel{
+        background-color: #374254;
+        margin-bottom: 50px;
+        height: 100px;
+        .iconImg{
+            width:60px;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+        h1{
+            color: white;
+            display: inline-block;
+            margin: 30px 0;
+        }
+    }
+    .facilitiesContent{
+        .contentBox{
+            margin-bottom: 50px;
+            .contentDescription{
+                background-color: #374254;
+                padding: 10px;
+                transition: color 0.5s, background-color 0.5s;
+                
+                h2{
+                    display: inline-block;
+                    margin-bottom: 20px;
+                }
+                .arrowRight{
+                    display: inline-block;
+                    width: 30px;
+                    height: 30px;
+                    border: 1px solid white;
+                    border-radius: 100%;
+                    margin-left: 10px;
+                }
+            }
+            
+            .contentImg{
+                background-repeat: no-repeat;
+                background-size: cover;
+                // background-position: center;
+                height: 300px;
+                width: 100%;
+            }
+            .contentImg1{
+                background-image: url("/assets/images/facilties/1.jpg");
+            }
+            .contentImg2{
+                background-image: url("/assets/images/facilties/2.jpg");
+            }
+            .contentImg3{
+                background-image: url("/assets/images/facilties/3.jpg");
+            }
+            .contentImg4{
+                background-image: url("/assets/images/facilties/4.jpg");
+            }
+            .contentImg5{
+                background-image: url("/assets/images/facilties/5.jpg");
+            }
+            .contentImg6{
+                background-image: url("/assets/images/facilties/6.jpg");
+            }
+        }
+        .contentBox:hover{
+            .contentDescription{
+                background-color: #FAC738;
+                color:#374254;
+                transition: color 0.5s, background-color 0.5s;
+            }
+        }
+    }
+}
+
+#individualPages{
+    color: #374254;
+    .pageLabel{
+        background-color: #374254;
+        height: 100px;
+        .iconImg{
+            width:60px;
+            height: 60px;
+            margin-bottom: 30px;
+        }
+        h1{
+            color: white;
+            display: inline-block;
+            margin: 30px 0;
+        }
+    }
+    .pageContent{
+        background-image: url("/assets/images/facilties/hospital/hospitalBG.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .pageDescription{
+            padding-top: 500px;
+            p{
+                text-indent: 3em;
+                font-size: 1.3em;
+                text-align: justify;
+            }
+        }
+        .pageImages{
+            margin: 50px 0;
+            .pageSlick{
+                .contentImg{
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    height: 300px;
+                    width: 100%;
+                }
+                .contentImg1{
+                    background-image: url("/assets/images/facilties/hospital/computer.jpg");
+                }
+                .contentImg2{
+                    background-image: url("/assets/images/facilties/hospital/doctors.jpg");
+                }
+                .contentImg3{
+                    background-image: url("/assets/images/facilties/hospital/hospital.jpg");
+                }
+                .contentImg4{
+                    background-image: url("/assets/images/facilties/hospital/laboratory.jpg");
+                }
+                .contentImg5{
+                    background-image: url("/assets/images/facilties/hospital/microscope.jpg");
+                }
+                .contentImg6{
+                    background-image: url("/assets/images/facilties/hospital/student.jpg");
+                }
+                .contentImg7{
+                    background-image: url("/assets/images/facilties/hospital/aid.jpg");
+                }
+                // @media screen and (min-width: 1024px){
+                //     .contentImg{
+                //         height: 150px;
+                //     }
+                // }
+            }
+        }
+    }
 }

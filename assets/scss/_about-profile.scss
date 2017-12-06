@@ -43,9 +43,10 @@
     padding: 70px 5vw;
     background-color: #6E7681 transparent;
     background-image:url("/assets/images/economic_social/socialBackground.jpg");
-    background-position: top;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     .accordionContents{
         .sectorName{
             color: #374254;
@@ -71,11 +72,16 @@
         
                     position: relative;
                     background: #FDC100;
-                    // border: 10px solid #FDC100;
-                    // .iconImg{
-                    //     width: 4vw;
-                    //     height:4vw;
-                    // }
+                    .iconImg{
+                        width: 4vw;
+                        height: 4vw;
+                        margin: auto 0;
+                        position: relative;
+                        background: #FDC100;
+                    }
+                    .iconImg2{
+                        padding: 0.5vw;
+                    }
                 }
                 .icon:after, .icon:before{
                     left: 91%;
@@ -90,13 +96,13 @@
                 .icon:after{
                     border-color: rgba(136, 183, 213, 0);
                     border-left-color: #FDC100;
-                    border-width: 2vw;
+                    border-width: 2vw 0 2vw 1vw;
                     margin-top: -2vw;
                 }
                 .icon:before{
                     border-color: rgba(194, 225, 245, 0);
                     border-left-color: #FDC100;
-                    border-width: 2vw;
+                    border-width: 2vw 0 2vw 1vw;
                     margin-top: -2vw;
                 }
                 h3{
@@ -162,14 +168,15 @@
     }    
 }
 #physicalFeatures{
-    padding: 70px 10vw;
+    padding: 70px 20px;
     background-image:url("/assets/images/economic_social/socialBackground.jpg");
-    background-position: top;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     .info{
         .areaInfo{
-            font-weight: bold;
+            // font-weight: bold;
             display: block;
             margin: 5px 0;
             text-transform: uppercase;
@@ -183,10 +190,13 @@
     }
     .landUse{
         margin-top: 30px;
+        h3{
+            font-weight: bold;
+        }
         table{
             margin-bottom: 50px;
             tr{
-                font-size: 1.5em;
+                font-size: 1em;
                 th{
                     background-color: #61B873;
                     font-weight: bold;
@@ -226,6 +236,7 @@
     }
     .topographyDescription{
         text-indent: 3em;
-        font-size: 2em;
+        font-size: 1.2em;
+        text-align: justify;
     }
 }
