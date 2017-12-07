@@ -33,16 +33,22 @@
         border-radius: 0;
         color: #ffffff;
         outline: none;
+        font-size: 1.3em;
     }
     .btn:hover{
         background-color: #f0b503;
         color: #374254;
     }
     .label-height{
+<<<<<<< Updated upstream
         height: 7.5vw;
     }
     .labelMDRRM{
         height:3vw !important;
+=======
+        height: 30px;
+        margin: 10px;
+>>>>>>> Stashed changes
     }
     .labelFontSize{
         font-size:1.5vw;
