@@ -1,5 +1,5 @@
 <ng-include src="'assets/app/template/partial/banner-half.html'"></ng-include>
-<section id="facilityPage">
+<section id="facilityPage" data-ng-controller="facilitiesController">
     <div class="pageLabel">
         <div class="container">
             <span>
@@ -13,7 +13,7 @@
             <div class="row">
                 <!-- Hospital -->
                 <div class="col-xs-12 col-sm-6 col-lg-4 ">
-                    <div class="contentBox">
+                    <div class="contentBox" ui-sref="facilityDetails({facility : 'hospital'})">
                         <div class="contentImg contentImg1"></div>
                         <div class="contentDescription">
                             <h2>Hospital</h2> <span class="arrowRight"></span>
@@ -23,7 +23,7 @@
                 </div>
                 <!-- Municipal Hall -->
                 <div class="col-xs-12 col-sm-6 col-lg-4 ">
-                    <div class="contentBox">
+                    <div class="contentBox" ui-sref="facilityDetails({facility : 'municipal_hall'})">
                         <div class="contentImg contentImg6"></div>
                         <div class="contentDescription">
                             <h2>Municipal Hall</h2> <span class="arrowRight"></span>
@@ -33,7 +33,7 @@
                 </div>
                 <!-- Fire Department -->
                 <div class="col-xs-12 col-sm-6 col-lg-4 ">
-                    <div class="contentBox">
+                    <div class="contentBox" ui-sref="facilityDetails({facility : 'fire_department'})">
                         <div class="contentImg contentImg5"></div>
                         <div class="contentDescription">
                             <h2>Fire Department</h2> <span class="arrowRight"></span>
@@ -43,7 +43,7 @@
                 </div>
                 <!-- Library -->
                 <div class="col-xs-12 col-sm-6 col-lg-4 ">
-                    <div class="contentBox">
+                    <div class="contentBox" ui-sref="facilityDetails({facility : 'library'})">
                         <div class="contentImg contentImg4"></div>
                         <div class="contentDescription">
                             <h2>Library</h2> <span class="arrowRight"></span>
@@ -53,7 +53,7 @@
                 </div>
                 <!-- Gym -->
                 <div class="col-xs-12 col-sm-6 col-lg-4 ">
-                    <div class="contentBox">
+                    <div class="contentBox" ui-sref="facilityDetails({facility : 'gym'})">
                         <div class="contentImg contentImg2"></div>
                         <div class="contentDescription">
                             <h2>Gym</h2> <span class="arrowRight"></span>
@@ -63,7 +63,7 @@
                 </div>
                 <!-- Coastguard -->
                 <div class="col-xs-12 col-sm-6 col-lg-4 ">
-                    <div class="contentBox">
+                    <div class="contentBox" ui-sref="facilityDetails({facility : 'coast_guard'})">
                         <div class="contentImg contentImg3"></div>
                         <div class="contentDescription">
                             <h2>Coastguard</h2> <span class="arrowRight"></span>
@@ -75,109 +75,3 @@
         </div>
     </div>
 </section>
-
-<section id="individualPages">
-    <div class="pageLabel">
-        <div class="container">
-            <span>
-                <img class="iconImg" src="assets/images/facilties/icon.png">
-                <h1>Hospital</h1>
-            </span>
-        </div>
-    </div>
-    <div class="pageContent">
-        <div class="pageDescription">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1>Lorem Ipsum</h1>
-                        <p>
-                            Donec rutrum congue leo eget malesuada. 
-                            Quisque velit nisi, pretium ut lacinia in, elementum id enim. 
-                            Vestibulum ac diam sit amet quam vehicula elementum sed sit 
-                            amet dui. Curabitur non nulla sit amet nisl tempus convallis 
-                            quis ac lectus. Vivamus magna justo, lacinia eget consectetur
-                            sed, convallis at tellus. Praesent sapien massa, convallis a 
-                            pellentesque nec, egestas non nisi.
-                        </p>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="pageImages">
-                        <div class="row">
-                            <div class="col-xs-12 pageSlick">
-                                <div class="">
-                                    <div class="contentImg contentImg1"></div>
-                                </div>
-                                <div class="">
-                                    <div class="contentImg contentImg2"></div>
-                                </div>
-                                <div class="">
-                                    <div class="contentImg contentImg3"></div>
-                                </div>
-                                <div class="">
-                                    <div class="contentImg contentImg4"></div>
-                                </div>
-                                <div class="">
-                                    <div class="contentImg contentImg5"></div>
-                                </div>
-                                <div class="">
-                                    <div class="contentImg contentImg6"></div>
-                                </div>
-                                <div class="">
-                                    <div class="contentImg contentImg7"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<script type="text/javascript">
-    $(document).ready(function(){
-        $('.pageSlick').slick({
-            dots: true,
-            centerMode: true,
-            arrows:false,
-            responsive: [
-            {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 5,
-                slidesToScroll: 1,
-                infinite: true,
-                dots: true
-                }
-            },   
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 1,
-                infinite: true,
-                centerMode: false,
-                dots: true
-                }
-            },
-            {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                centerMode: false
-                }
-            },
-            // {
-            // breakpoint: 480,
-            // settings: {
-            //     slidesToShow: 1,
-            //     slidesToScroll: 1
-            //     }
-            // }
-            ]
-        });
-    });
-</script>
