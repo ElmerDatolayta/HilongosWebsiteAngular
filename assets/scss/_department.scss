@@ -335,61 +335,60 @@
                     text-align: center;
                 }
             }
-
-            .function-desc {
-                margin-bottom: 50px;
-              }
-              
-              .letter-list {
-                list-style-position: inside;
-              }
-              
-            //   .number-list {
-            //     list-style-type: 
-            //   }
-              
-              .mission-vision-title {
-                background-color: #ffd15d;
-                padding: 20px;
-                text-align: right;
-                margin-right: 10px;
-              }
-              .mission-vision-title h3 {
-                padding: 0;
-                margin: 0;
-              }
-              
-              .mission-vision-bar {
-                background-color: #374254;
-                height: 65px;
-                width: 70%;
-              }
-              
-              .mission-vision-content {
-                padding: 20px 200px;
-              }
-              
-              .team-pic {
-                margin: 0 auto;
-                width: 80%;
-              }
-              
-              .dept-head img,
-              .dept-personnel img {
-                border-radius: 100%;
-                margin: 0 auto;
-              }
-              
-              .dept-personnel {
-                margin: 0 auto;
-              }
-              
-              hr.separator-bar {
-                border-top: 2px solid #ccc;
-              }
-            
         }
     }  
+
+    .function-desc {
+        margin-bottom: 50px;
+      }
+      
+      .function-desc li {
+        margin-left: 15px;
+      }
+      
+      .letter-list{
+        list-style-type: lower-alpha;
+      }
+      
+      .mission-vision-title {
+        background-color: #ffd15d;
+        padding: 20px;
+        text-align: right;
+        margin-right: 10px;
+      }
+      .mission-vision-title h3 {
+        padding: 0;
+        margin: 0;
+      }
+      
+      .mission-vision-bar {
+        background-color: #374254;
+        height: 65px;
+        width: 70%;
+      }
+      
+      .mission-vision-content {
+        padding: 20px 200px;
+      }
+      
+      .team-pic {
+        margin: 0 auto;
+        width: 80%;
+      }
+      
+      .dept-head img,
+      .dept-personnel img {
+        border-radius: 100%;
+        margin: 0 auto;
+      }
+      
+      .dept-personnel {
+        margin: 0 auto;
+      }
+      
+      hr.separator-bar {
+        border-top: 2px solid #ccc;
+      }
 }
     
 
