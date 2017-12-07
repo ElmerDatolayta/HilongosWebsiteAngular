@@ -5,31 +5,32 @@
         h1{
             align-items: center;
             color: white;
-            padding: 10px 5%;
+            padding: 10px 0;
         }
     }
     #investorsContent{
-        padding:2% 5%;
+        // padding:2% 5%;
         .divLabel{
             background-color: #61B873;
             width: 100%;
             h3{
-                margin-left: 2vw;
+                margin-left: 20px;
+                font-weight: bold;
             }
         }
         .divContents{
             height: auto;
             padding: 30px 0;
             margin-bottom: 30px;
-            overflow-y: scroll;
+            // overflow-y: scroll;
             .contentDescription{
                 height: auto;
-                padding-top: 2vw;
+                padding-top: 20px;
                 p{
                     font-size: 1.4em;
                     text-indent: 2.5em;
                     text-align: justify;
-                    height: 20vw;
+                    height: 100px;
                     overflow-y: hidden;
                     margin-bottom: 30px;
                     color: black;
@@ -51,7 +52,7 @@
             }
             .contentImage{
                 width: 100%;
-                height: 28vw;
+                height: 300px;
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -69,27 +70,28 @@
             padding: 30px 0;
             margin-bottom: 30px;
             .scrollContents{
-                height: 40vw;
-                overflow-y: scroll;
+                // height: 300px;
+                height: auto;
+                // overflow-y: scroll;
                 .upcomingDev{
                     background-color: white;
                     width: 100%;
-                    padding: 2vw;
+                    padding: 20px;
                     margin-bottom: 10px;
                     .contentDescription{
                         height: auto;
                         // padding-top: 2vw;
-                        h1{
-                            font-size: 2.5vw;
+                        h3{
                             margin-top: 0;
+                            font-weight: bold;
                         }
                         p{
                             display: block;
                             display: -webkit-box;
                             width: 100%;
-                            font-size: 24px;
+                            font-size: 20px;
                             text-align: justify;
-                            height: 24px*1.5*4;
+                            height: 20px*1.5*4;
                             line-height: 1.5;
                             -webkit-line-clamp: 4;
                             -webkit-box-orient: vertical;
@@ -100,9 +102,10 @@
                             color: black;
                         }
                         .readMoreLink{
-                            float:left;
                             color: black;
                             text-decoration: none;
+                            display: flex;
+                            justify-content: center;
                             .readMore{
                                 background-color: #F9C939;
                                 height: 1.7em;
@@ -115,7 +118,7 @@
                     }
                     .contentImage{
                         width: 100%;
-                        height: 28vw;
+                        height: 300px;
                         background-position: center;
                         background-size: cover;
                         background-repeat: no-repeat;
@@ -129,7 +132,7 @@
                     }
                     .upcomingDevImg{
                         width: 100%;
-                        height: 20vw;
+                        height: 300px;
                         background-position: center;
                         background-size: cover;
                         background-repeat: no-repeat;
@@ -150,4 +153,65 @@
         }
     }
     
+}
+
+@media screen and (min-width: 992px){
+    #investorPage{
+        .pageLabel{
+            h1{
+            }
+        }
+        #investorsContent{
+            // padding:2% 5%;
+            .divLabel{
+                h3{
+                }
+            }
+            .divContents{
+                .contentDescription{
+                    p{
+                        height: 300px;
+                    }
+                    .readMoreLink{
+                        .readMore{
+                        }
+                    }
+                }
+                .contentImage{
+                    height: 400px;
+                }
+                .contentImage1{
+                }
+                .contentImage2{
+                }
+            }
+            .divContents2{
+                .scrollContents{
+                    overflow-y: scroll;
+                    height: 300px;
+                    .upcomingDev{
+                        .contentDescription{
+                            h3{
+                            }
+                            p{
+                            }
+                            .readMoreLink{
+                                display: block;
+                                float:left;
+                                justify-content: unset; 
+                                margin-top: 20px;
+                                .readMore{
+                                }
+                            }
+                        }
+                        .upcomingDevImg{
+                            height:250px;
+                        }
+                    }
+                }
+               
+            }
+        }
+        
+    }
 }

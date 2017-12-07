@@ -4,11 +4,11 @@
         h1{
             align-items: center;
             color: white;
-            padding: 10px 5%;
+            padding: 10px 0;
         }
     }
     .contactsContent{
-        padding:2% 5% 5px;
+        padding:2% 0 5px;
         .contactList{
             margin-bottom: 20px;
             .divLabel{
@@ -49,14 +49,14 @@
                             margin-bottom: 20px;
                         }
                         .contactLogo2{
-                            width: 20vw !important;
-                            height: 20vw !important;
+                            width: 50% !important;
+                            height: 150px !important;
                         }
                         .contactLogo3{
-                            width:40%;
+                            width:35% !important;
                         }
                         .contactLogo4{
-                            width:50%;
+                            width:40%;
                         }
                         .contactDirLogo1{
                             background-image: url("/assets/images/contacts/admin.png");
@@ -153,5 +153,60 @@
             }
         }
         
+    }
+}
+
+@media screen and (min-width: 768px){
+    #contactsPage{
+        .contactsContent{
+            .contactList{
+                .contactDirectory{
+                    .contactItems:nth-child(odd){
+                        border-right: 1px solid #828892;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    #contactsPage{
+        .contactsContent{
+            .contactList{
+                .contactDirectory{
+                    .row:nth-child(3){
+                        .contactItems{
+                            border-bottom: none;
+                        }
+                    }
+                    .contactItems:nth-child(4n+0){
+                        border-right: none;
+                    }
+                    .contactItems{
+                        border-right: 1px solid #828892;
+                        .contactIcon{
+                            .contactLogo1{
+                                height: 80px !important;
+                            }
+                            .contactLogo3{
+                                width: 48% !important;
+                            }
+                            .contactLogo4{
+                                width: 60% !important;
+                            }
+                        }
+                    }
+                }
+            }
+            .contactList:first-child{
+                .contactDirectory{
+                    .row:nth-child(2){
+                        .contactItems{
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
