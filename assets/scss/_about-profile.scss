@@ -176,7 +176,6 @@
     background-attachment: fixed;
     .info{
         .areaInfo{
-            // font-weight: bold;
             display: block;
             margin: 5px 0;
             text-transform: uppercase;
@@ -190,13 +189,9 @@
     }
     .landUse{
         margin-top: 30px;
-        h3{
-            font-weight: bold;
-        }
         table{
             margin-bottom: 50px;
             tr{
-                font-size: 1em;
                 th{
                     background-color: #61B873;
                     font-weight: bold;
@@ -236,7 +231,5 @@
     }
     .topographyDescription{
         text-indent: 3em;
-        font-size: 1.2em;
-        text-align: justify;
     }
 }
