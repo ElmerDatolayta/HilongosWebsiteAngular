@@ -41,7 +41,7 @@
 
 #demographicsTab{
     padding: 70px 0;
-    background-color: #6E7681 transparent;
+    // background-color: #6E7681 transparent;
     // background-image:url("/assets/images/economic_social/socialBackground.jpg");
     background-position: bottom;
     background-size: cover;
@@ -51,14 +51,14 @@
         .sectorName{
             color: #374254;
         }
-        .sectorName:after{
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 25px 0 25px 90px;
-            border-color: transparent transparent transparent #fdc200;
-            z-index: 3;
-        }
+        // .sectorName:after{
+        //     width: 0;
+        //     height: 0;
+        //     border-style: solid;
+        //     border-width: 25px 0 25px 90px;
+        //     border-color: transparent transparent transparent #fdc200;
+        //     z-index: 3;
+        // }
         .accordionPanel{
             .divLabel{
                 background-color: #61B873;
@@ -66,21 +66,21 @@
                 position: relative;
                 // padding: 2vw 1vw;
                 .icon{
-                    width: 4vw;
-                    height: 4vw;
+                    width: 55px;
+                    height: 55px;
                     margin: auto 0;
         
                     position: relative;
                     background: #FDC100;
                     .iconImg{
-                        width: 4vw;
-                        height: 4vw;
+                        width: 55px;
+                        height: 55px;
                         margin: auto 0;
                         position: relative;
                         background: #FDC100;
                     }
                     .iconImg2{
-                        padding: 0.5vw;
+                        padding: 5px;
                     }
                 }
                 .icon:after, .icon:before{
@@ -96,39 +96,46 @@
                 .icon:after{
                     border-color: rgba(136, 183, 213, 0);
                     border-left-color: #FDC100;
-                    border-width: 2vw 0 2vw 1vw;
-                    margin-top: -2vw;
+                    border-width: 28px 0 28px 15px;
+                    margin-top: -28px;
                 }
                 .icon:before{
                     border-color: rgba(194, 225, 245, 0);
                     border-left-color: #FDC100;
-                    border-width: 2vw 0 2vw 1vw;
-                    margin-top: -2vw;
+                    border-width: 28px 0 28px 15px;
+                    margin-top: -28px;
                 }
                 h3{
-                   margin-left: 3vw;
+                   margin-left: 30px;
                    vertical-align: middle;
                     display: inline;
                     text-transform: uppercase;
                     color: #374254;
                 }
+                h5{
+                    margin-left: 30px;
+                    vertical-align: middle;
+                     display: inline;
+                     text-transform: uppercase;
+                     color: #374254;
+                }
             }
             .contents{
-                padding: 1vw 4vw;
+                padding: 30px 40px;
                 background-color: #6E7681;
                 height:auto;
                 font-family: sans-serif;
                 .tableHeading{
                     color: white;
                     text-align: center;
-                    font-size: 1.4vw;
+                    font-size: 1.5em;
                     font-weight: bold;
                 }
                 .tableHeadingLeft{
                     text-align: left !important;
                 }
                 .pContents{
-                    font-size: 1.4vw;
+                    font-size: 1em;
                     color: white;
                 }
                 table{
@@ -136,8 +143,8 @@
                     margin-bottom: 20px;
                     tr{
                         td{
-                            font-size: 1.3vw;
-                            padding:1.5vw 4vw;
+                            font-size: 1em;
+                            padding:1em 20px;
                             border-right: 2px solid #6E7681;
                             // text-transform: uppercase;
                             // color: #374254;
@@ -147,8 +154,8 @@
                         }
 
                         th{
-                            font-size: 1.3vw;
-                            padding:1.5vw 4vw;
+                            font-size: 1em;
+                            padding:1em 20px;
                             border-right: 2px solid #6E7681;
                             // text-transform: uppercase;
                             text-align: center;
