@@ -70,9 +70,17 @@ app.config([
             url: '/facilities',
             templateUrl: 'assets/app/template/unknown/facilities.html'
         })
+        .state('facilityDetails', {
+            url: '/facility/:facility',
+            templateUrl: 'assets/app/template/unknown/facilityDetails.html'
+        })
         .state('equipment', {
-            url: '/equipment',
+            url: '/equipments',
             templateUrl: 'assets/app/template/unknown/equipment.html'
+        })
+        .state('equipmentDetails', {
+            url: '/equipment/:equipment',
+            templateUrl: 'assets/app/template/unknown/equipmentDetails.html'
         });
 
 	    $qProvider.errorOnUnhandledRejections(false);
