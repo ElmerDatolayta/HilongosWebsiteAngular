@@ -31,6 +31,10 @@ app.config([
             controller : 'eventController',
             templateUrl: 'assets/app/template/event/event.html'
         })
+        .state('eventDetails', {
+            url: '/eventdetails/:eventId',
+            templateUrl: 'assets/app/template/event/eventdetails.html'
+        })
         .state('governance', {
             url: '/governance',
             templateUrl: 'assets/app/template/governance/governance.html'
