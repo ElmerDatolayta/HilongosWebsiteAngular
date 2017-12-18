@@ -106,18 +106,21 @@
                     margin-top: -28px;
                 }
                 h3{
-                   margin-left: 30px;
-                   vertical-align: middle;
+                    margin-left: 30px;
+                    vertical-align: middle;
                     display: inline;
                     text-transform: uppercase;
                     color: #374254;
+                    // font-size: 0.5em;
                 }
                 h5{
                     margin-left: 30px;
                     vertical-align: middle;
-                     display: inline;
-                     text-transform: uppercase;
-                     color: #374254;
+                    display: inline;
+                    text-transform: uppercase;
+                    color: #374254;
+                    // font-size: 0.5em;
+                     
                 }
             }
             .contents{
@@ -125,6 +128,7 @@
                 background-color: #6E7681;
                 height:auto;
                 font-family: sans-serif;
+                overflow-x: scroll;
                 .tableHeading{
                     color: white;
                     text-align: center;
@@ -138,8 +142,12 @@
                     font-size: 1em;
                     color: white;
                 }
+                .tableLarge{
+                    overflow-x: scroll;
+                    // width: 80% !important;
+                }
                 table{
-                    width: 100%;
+                    // width: auto;
                     margin-bottom: 20px;
                     tr{
                         td{
@@ -168,6 +176,59 @@
                     }
                     tr:nth-child(even){
                         background-color: #E5E5E5;
+                    }
+                }
+            }
+            @media screen and (max-width: 991px){
+                .contents{
+                    padding: 10px 5px;
+                    background-color: #6E7681;
+                    height:auto;
+                    font-family: sans-serif;
+                    .tableHeading{
+                        color: white;
+                        text-align: center;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                    }
+                    .tableHeadingLeft{
+                        text-align: left !important;
+                    }
+                    .pContents{
+                        font-size: 1.2em;
+                        color: white;
+                    }
+                    table{
+                        width: 100%;
+                        margin-bottom: 20px;
+                        tr{
+                            td{
+                                font-size: 1em;
+                                padding:10px 5px;
+                                border-right: 2px solid #6E7681;
+                                // text-transform: uppercase;
+                                // color: #374254;
+                            }
+                            .tdCentered{
+                                text-align: center;
+                            }
+    
+                            th{
+                                font-size: 1em;
+                                padding:10px 5px;
+                                border-right: 2px solid #6E7681;
+                                // text-transform: uppercase;
+                                text-align: center;
+                                font-weight: bold;
+                                // color: #374254;
+                            }
+                        }
+                        tr:nth-child(odd){
+                            background-color: #B8B8B8;
+                        }
+                        tr:nth-child(even){
+                            background-color: #E5E5E5;
+                        }
                     }
                 }
             }
