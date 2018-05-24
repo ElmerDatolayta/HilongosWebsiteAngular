@@ -64,7 +64,7 @@ gulp.task('html',function(){
             './public/assets/app/controller/**/*.js',
             './public/assets/js/*.js',
         ]
-        , {read: false}),{ignorePath:'public'}))
+        , {read: true}),{ignorePath:'public'}))
     .pipe(gulp.dest('./public/'));
 });
 
